@@ -1,0 +1,13 @@
+{
+  "framework": null,
+  "buildCommand": "node build.js",
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/:slug(champions-league-live-scores|europa-league-live-scores|conference-league-live-scores|nations-league-live-scores|premier-league-live-scores|la-liga-live-scores|serie-a-live-scores|bundesliga-live-scores|ligue-1-live-scores|mls-live-scores|saudi-pro-league-live-scores|fa-cup-live-scores|world-cup-2026-live-scores|football-matches-today|soccer-live-scores|real-madrid-live-score)/",
+      "destination": "https://kickpulse-football.vercel.app/:slug/",
+      "permanent": true
+    }
+  ]
+}
