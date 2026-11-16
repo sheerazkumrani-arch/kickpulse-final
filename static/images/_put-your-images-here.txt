@@ -1,0 +1,4 @@
+Put your article pictures in this folder (static/images/).
+Use small English letters, numbers and dashes only, no spaces:  inter-miami-vs-orlando.jpg
+Then in the article:   image: /images/inter-miami-vs-orlando.jpg
+This text file is not published on the website.
