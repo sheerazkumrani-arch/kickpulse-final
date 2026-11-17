@@ -1,51 +1,64 @@
 ---
 title: MLS kickoff times in Pakistan, the UK and Europe
-description: Convert MLS kickoff times from US Eastern, Central, and Pacific time to Pakistan (PKT), UK, and European time with winter and summer charts.
+description: Convert MLS kickoff times from US Eastern time to Pakistan, UK and European time, with simple examples and a quick conversion table.
 date: 2026-11-14
 category: Guides
-image: /images/mls-kickoff-times-guide.jpg
-imageAlt: MLS kickoff time conversion chart for Pakistan, UK and Europe
+image: /images/mls-kickoff-times-pakistan-uk-europe.jpg
+imageAlt: MLS kickoff times for Pakistan, UK and Europe graphic with live score and blog links
 ---
+If you follow Major League Soccer from Pakistan, the UK or anywhere in Europe, you already know the problem. The match is advertised for 7:30 pm, you plan your evening around it, and then you realise that 7:30 pm means Eastern time in the United States. For you, it is the middle of the night.
 
-Most Major League Soccer matches kick off in the North American evening, which means late night or early morning for fans following the league from Pakistan, the UK, and mainland Europe. Because MLS clubs play across four North American time zones, knowing a quick conversion rule saves you from waking up an hour late—or missing kickoff by a full day.
+The good news is that converting MLS kickoff times is easy once you know one simple rule. This guide walks through it step by step, with real examples you can copy.
 
-## The simple rule from US Eastern time
+## Start with Eastern time
 
-Most MLS schedules list kickoff times in **US Eastern Time (ET)**, regardless of where the match is played:
+Most MLS schedules and TV listings quote kickoff in US Eastern time. That is the best starting point, because from there you only need to know how far Eastern time is from UTC, the world's reference clock.
 
-- In **winter** (standard time), US Eastern Time (**EST**) is **5 hours behind UTC**.
-- In **summer** (daylight time), US Eastern Time (**EDT**) is **4 hours behind UTC**.
+- In winter, when the US is on standard time, Eastern is 5 hours behind UTC.
+- In summer, when the US is on daylight time, Eastern is 4 hours behind UTC.
 
-Pakistan Standard Time (**PKT**) stays at **UTC+5** all year because Pakistan does not observe daylight saving time. Meanwhile, the UK shifts between **GMT (UTC+0)** in winter and **BST (UTC+1)** in summer, and Central Europe shifts between **CET (UTC+1)** and **CEST (UTC+2)**.
+Once you have the UTC time, you add your own offset. Pakistan is on UTC+5 all year, with no clock changes. The UK is on UTC+0 in winter and UTC+1 in summer. Central Europe is one hour ahead of the UK, so UTC+1 in winter and UTC+2 in summer.
 
-## Winter kickoff examples (standard time)
+## A quick conversion table
 
-During the early spring and late autumn playoff weeks when both North America and Europe are on standard time, use these conversions:
+Here is what a typical 7:30 pm Eastern kickoff looks like around the world.
 
-| US Kickoff | UK (GMT) | Central Europe (CET) | Pakistan (PKT) |
-|---|---|---|---|
-| 1:00 pm EST | 6:00 pm (same day) | 7:00 pm (same day) | 11:00 pm (same day) |
-| 7:30 pm EST | 12:30 am (next day) | 1:30 am (next day) | 5:30 am (next day) |
-| 7:30 pm CST | 1:30 am (next day) | 2:30 am (next day) | 6:30 am (next day) |
-| 7:30 pm PST | 3:30 am (next day) | 4:30 am (next day) | 8:30 am (next day) |
+| Where | Winter (US standard time) | Summer (US daylight time) |
+|---|---|---|
+| US Eastern | 7:30 pm | 7:30 pm |
+| UTC | 00:30 (next day) | 23:30 |
+| UK | 00:30 (next day) | 00:30 (next day) |
+| Central Europe | 1:30 am (next day) | 1:30 am (next day) |
+| Pakistan | 5:30 am (next day) | 4:30 am (next day) |
 
-## Summer kickoff examples (daylight time)
+Notice something useful. The UK and Central Europe get the same clock time in winter and summer, because their own clocks move as well. Pakistan is the one that shifts by an hour, because Pakistan does not change its clocks.
 
-From late March through October—covering most of the MLS regular season—both the US and Europe run on daylight time while Pakistan stays at UTC+5. That brings US evening matches **one hour earlier** in Pakistan:
+## Not every match is in the Eastern time zone
 
-| US Kickoff | UK (BST) | Central Europe (CEST) | Pakistan (PKT) |
-|---|---|---|---|
-| 1:00 pm EDT | 6:00 pm (same day) | 7:00 pm (same day) | 10:00 pm (same day) |
-| 7:30 pm EDT | 12:30 am (next day) | 1:30 am (next day) | 4:30 am (next day) |
-| 7:30 pm CDT | 1:30 am (next day) | 2:30 am (next day) | 5:30 am (next day) |
-| 7:30 pm PDT | 3:30 am (next day) | 4:30 am (next day) | 7:30 am (next day) |
+MLS clubs are spread across the United States and Canada, so some matches are played in Central, Mountain or Pacific time. A match on the west coast at 7:30 pm Pacific is three hours later than the same number on the east coast. In winter, that works out to 3:30 am UTC, which is 8:30 am in Pakistan. That is a much friendlier kickoff for fans in South Asia, and it is one reason West Coast games are popular with viewers there.
 
-## Check the calendar date too
+The simple habit is to check which time zone the listing uses before you do any maths. If it does not say, assume Eastern, and then confirm on the match page.
 
-Late evening matches in the US almost always land on the **next calendar day** in Europe and Pakistan. A Saturday 7:30 pm ET match in Miami, Orlando, or Cincinnati kicks off on **Sunday morning** at 4:30 am or 5:30 am PKT. West Coast home games (like LAFC, LA Galaxy, or Seattle Sounders at 7:30 pm PT) are actually easier to catch live in Pakistan with breakfast at 7:30 am or 8:30 am PKT.
+## Watch out for the date
 
-## Watch the two daylight saving gap weeks
+Late kickoffs often land on the next calendar day where you live. A Saturday evening match in the US can be a Sunday morning match in Pakistan. That matters if you are planning around work, school or prayer times, so always convert the date as well as the hour.
 
-The United States and Europe change their clocks on **different weekends** in March and again in late October or early November. During those brief two-to-three-week windows, the time gap between US Eastern Time and the UK/Europe shifts by an hour.
+## Clock changes can shift the gap
 
-To avoid getting caught out by clock changes or schedule adjustments, check the live matchday feed on the homepage or verify today’s fixtures on [KickPulse MLS schedules](https://kickpulse-football.vercel.app/mls-schedule/) before setting your alarm.
+The US and Europe do not change their clocks on the same weekend. The US usually moves earlier in March and later in autumn than Europe does. For a couple of weeks each spring and autumn, the gap between Eastern time and the UK is four hours instead of the usual five. If a kickoff looks an hour off during those weeks, this is almost always the reason.
+
+## The easiest way to avoid mistakes
+
+Mental maths is fine for planning, but on match day you want certainty. Open the [MLS live scores today](https://kickpulse-football.vercel.app/mls-live-scores/) page on KickPulse and the kickoff times are shown in your own time zone, so there is nothing to convert. If you want to plan ahead, the [MLS schedule](https://kickpulse-football.vercel.app/mls-schedule/) page lists upcoming games for the coming days, and the [MLS matches today](https://kickpulse-football.vercel.app/mls-live-scores/) view shows exactly what is on right now.
+
+Once the match starts, you can follow the MLS scoreboard live, with goals and cards as they happen, instead of refreshing a page and hoping.
+
+## A simple routine for fans in Pakistan
+
+1. Check the MLS schedule on the weekend for the games you care about.
+2. Note the Eastern time, then add 5 hours (winter) or 4 hours (summer) to get UTC.
+3. Add 5 hours for Pakistan time and check whether the date moves to the next day.
+4. Set an alarm for 15 minutes before kickoff, and look at the team news on [Pitchside Notes](https://kickpulse-final.vercel.app/) while you wait.
+5. Follow the MLS score today on KickPulse during the match.
+
+That is all it takes. After a few weeks, you will convert kickoff times in your head without thinking about it.

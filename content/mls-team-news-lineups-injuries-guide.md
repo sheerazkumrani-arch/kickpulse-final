@@ -1,48 +1,57 @@
 ---
 title: MLS team news: where lineups and injury updates come from
-description: Learn where reliable MLS team news, official injury reports, and confirmed starting lineups come from before kickoff, plus how to spot rotation.
+description: A simple guide to finding reliable MLS team news: injuries, confirmed lineups and rotation hints before a match.
 date: 2026-11-15
 category: Guides
-image: /images/mls-team-news-lineups-guide.jpg
-imageAlt: Football tactics board and matchday lineup notes for MLS team news
+image: /images/mls-team-news-lineups-injuries.jpg
+imageAlt: MLS team news, lineups and injuries graphic with live score and blog links
 ---
+Fans often ask us the same question: where does reliable MLS team news actually come from? It is a fair question. In the hours before a match, social media fills up with rumours, "leaked" lineups and screenshots with no source. Some of it is right, and a lot of it is not.
 
-Fans often ask where reliable MLS team news comes from, especially when social media is full of rumours before a big weekend fixture. Knowing which updates are official—and which ones are only early guesses—saves time and helps you read every match preview with confidence.
+This guide shows you a simple, repeatable way to check MLS team news, so you know who is playing, who is out and what that means for the game.
 
-## Official club channels and MLS availability reports
+## Start with the official club channels
 
-Clubs publish injury and availability updates on their own websites, press releases, and verified social accounts. Major League Soccer also publishes an official Player Availability Report ahead of matchdays, listing players who are **Out** or **Questionable** along with suspension notes.
+Clubs publish injury and availability updates on their own websites and official social media accounts. These are the most reliable sources, so use them first. If a club says a player is out, he is out. If a rumour says otherwise, believe the club.
 
-These official channels are the most reliable sources, so check them first before trusting third-party posts. If a club has not confirmed an injury publicly, treat any rumour carefully.
+Many clubs also publish an injury report in the day or two before a match. When you see an official report, the wording is worth reading carefully. "Out" means he will not play. "Questionable" or "doubtful" means it is genuinely uncertain, and you should wait for more news.
 
 ## Pre-match press conferences
 
-Head coaches usually speak to reporters a day or two before kickoff—and in busy midweek schedules, sometimes right after training. During those briefings, managers often clarify:
+Coaches usually speak to the media a day or two before a match. They often say who is fit, who is doubtful and whether changes are likely. You will not always get a straight answer, because some coaches like to keep information back, but even a vague answer is a clue. "We will see how he trains" usually means a player is not certain to start.
 
-- Which injured players have returned to full team training
-- Who is still doubtful or being assessed late
-- Whether heavy travel or fixture congestion could force changes to the starting XI
+If you cannot watch the press conference, local reporters who cover the club usually summarise the key points within minutes. Look for reporters who name the source of each claim.
 
-Coaches rarely reveal their full tactical plan, but their tone on fitness and workload usually gives the clearest clue about who will start.
+## Confirmed lineups
 
-## Confirmed lineups vs early predictions
+Starting lineups are normally released roughly an hour before kickoff. Anything you read earlier is a prediction, however confident it sounds. When the official lineup comes out, compare it with what you expected. The differences tell you a lot: an unexpected defender in midfield, for example, may mean the coach is changing shape.
 
-Official starting lineups in MLS are normally released roughly **60 minutes before kickoff** across club social feeds and league match centres. Anything published earlier in the week—or even earlier on matchday—is an educated prediction, not a confirmed team sheet.
+This is also the moment when a live view becomes useful. Once the lineups are in, open the [MLS scores today live](https://kickpulse-football.vercel.app/mls-live-scores/) page on KickPulse. You can tap a match to see the events and lineups as the game unfolds.
 
-When comparing early predicted lineups with the final XI, check the substitutes' bench as well. Seeing a key starter drop to the bench often signals workload management rather than a long-term injury.
+## Reading the signs of rotation
 
-## Reading the signs of squad rotation
+Teams that play several matches in a short time, or travel long distances, often change the lineup. MLS has more travel than most leagues, because clubs cover a whole continent. Look at how many days of rest each side has had, and whether a midweek cup or international fixture is coming. A coach with a big match in three days will often rest a key player in a smaller one.
 
-Teams that play several matches in a short stretch—such as midweek league fixtures, cup ties, or continental travel—rotate players far more often than clubs playing once a week. In a league as geographically spread out as MLS, long cross-country flights and quick turnarounds affect legs just as much as form.
+Rotation does not mean a team is weaker. It means the squad is deeper than the starting XI suggests, which is worth knowing before you judge a result.
 
-Before kickoff, ask three quick questions:
+## What to trust, and what to question
 
-1. How many days of rest has each team had since its last match?
-2. Did either club travel across multiple time zones this week?
-3. Does either side have an even bigger match coming up in three or four days?
+A quick way to rate a piece of team news:
 
-Those three checks explain most surprise benchings long before the match kicks off.
+- **Official club statement:** trust it.
+- **Coach in a press conference:** trust it, but read the wording.
+- **Named reporter with a clear source:** usually reliable.
+- **Anonymous account or screenshot:** be careful until it is confirmed.
+- **"Sources say" with nothing else:** treat it as a rumour.
 
-## A good matchday habit
+## How team news changes the scoreline
 
-Write your own short match note before checking other previews: list who is officially out, who is listed as questionable, and one tactical or lineup change you expect to see. Over a few weeks, tracking official club updates alongside [MLS live scores and schedules on KickPulse](https://kickpulse-football.vercel.app/mls-live-scores/) is the fastest way to learn every squad in the league.
+Team news is not just trivia. One missing player can change how a team presses, who takes set pieces and how many chances it creates. If you are following a game, it explains the shape you see on the pitch, and it helps you make sense of the MLS scoreboard when a result looks surprising.
+
+For quick results, the [MLS score today](https://kickpulse-football.vercel.app/mls-live-scores/) page lists every finished and live match for the day. If you follow one club closely, such as Inter Miami, the [Inter Miami live score](https://kickpulse-football.vercel.app/inter-miami-live-score/) page filters straight to its matches.
+
+## A good habit to build
+
+Write your own short note for each match: who is out, who is doubtful, and one change you expect. After the lineups arrive, check how many of your guesses were right. It is the fastest way to learn the league, and over a few weeks you will start to notice patterns in how each coach picks a team.
+
+For more previews and team news, keep an eye on [Pitchside Notes](https://kickpulse-final.vercel.app/), and use KickPulse when the match kicks off.
