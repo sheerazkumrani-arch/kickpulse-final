@@ -3,9 +3,10 @@ title: Orlando City vs FC Cincinnati: MLS Live Scores, Preview and Team News
 description: Orlando City vs FC Cincinnati MLS Cup Playoffs preview: kickoff time, team news, lineups, prediction, how to watch and MLS live scores today.
 date: 2026-11-17
 category: Match previews
+featured: yes
 image: /images/orlando-city-vs-fc-cincinnati.jpg
 imageAlt: Orlando City SC vs FC Cincinnati MLS Cup Playoffs Wild Card match preview
-author: Pitchside Notes
+author: Sheeraz Khan
 ---
 
 One match, no second chances. **Orlando City SC** host **FC Cincinnati** in the Eastern Conference Wild Card of the 2026 MLS Cup Playoffs, and only one of them will be playing on the weekend. If you want the **MLS live score**, the latest **MLS results** or just a clear picture of the **MLS matchups** before kickoff, start here and then follow every goal on [MLS live scores on KickPulse](https://kickpulse-football.vercel.app/mls-live-scores/).
