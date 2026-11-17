@@ -4,6 +4,8 @@ description: "Seattle Sounders vs Real Salt Lake in the 2026 MLS Cup Playoffs: p
 slug: "seattle-sounders-vs-real-salt-lake-prediction"
 date: "2026-11-16"
 category: "MLS Match Preview"
+image: /images/seattle-rsl-hero-banner.jpg
+imageAlt: Floodlit stadium with a football in Seattle green and Real Salt Lake claret
 tags:
   - MLS Predictions
   - Seattle Sounders
