@@ -17,6 +17,7 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&l
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 const fmt = (d) => { const x = new Date(d + "T00:00:00Z"); return isNaN(x) ? d : x.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }); };
 const isUrl = (u) => /^https?:\/\//.test(u);
+const normImg = (u) => (isUrl(u) || u.startsWith("/") ? u : "/" + u);
 function imgState(src) { // "ok" | "missing" | "case"
   if (isUrl(src)) return "ok";
   const parts = src.split("/").filter(Boolean); let dir = STATIC;
@@ -35,22 +36,27 @@ function checkImg(src, file, alt) {
   return s === "ok";
 }
 const inl = (s) => esc(s)
+  .replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (m, a, u) => (imgState(normImg(u)) === "ok" ? `<img src="${normImg(u)}" alt="${a}" loading="lazy">` : ""))
   .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (m, t, u) => `<a href="${u}"${isUrl(u) && !u.startsWith(SITE) ? ' rel="noopener"' : ""}>${t}</a>`)
   .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
   .replace(/(^|[\s(])\*([^*\s][^*]*?)\*(?=[\s).,;:!?]|$)/g, "$1<em>$2</em>");
 
-function md(t, file) {
-  const L = t.split(/\r?\n/), toc = [], used = {}; let o = "", i = 0, p = [];
+function md(t, file, title) {
+  const L = t.split(/\r?\n/), toc = [], used = {}; let o = "", i = 0, p = [], first = null;
   const flush = () => { if (p.length) { o += "<p>" + inl(p.join(" ")) + "</p>"; p = []; } };
   const take = (re) => { const r = []; while (i < L.length && re.test(L[i])) r.push(L[i++]); return r; };
   while (i < L.length) {
     const l = L[i]; let m;
     if (!l.trim()) { flush(); i++; continue; }
     if ((m = l.match(/^!\[([^\]]*)\]\(\s*([^)\s]+)(?:\s+"([^"]*)")?\s*\)\s*$/))) {
-      flush(); checkImg(m[2], file, m[1]);
-      o += `<figure><img src="${esc(m[2])}" alt="${esc(m[1])}" loading="lazy">${m[3] ? "<figcaption>" + inl(m[3]) + "</figcaption>" : ""}</figure>`; i++; continue;
+      flush(); const src = normImg(m[2]), good = checkImg(src, file, m[1]); i++;
+      if (!good) continue; // a missing picture is left out, so no broken-image box appears on the page
+      const fig = `<figure><img src="${esc(src)}" alt="${esc(m[1])}" loading="lazy">${m[3] ? "<figcaption>" + inl(m[3]) + "</figcaption>" : ""}</figure>`;
+      if (!first) first = { html: fig, src, alt: m[1] };
+      o += fig; continue;
     }
-    if (/^# /.test(l)) { flush(); warn.push(`${file}: a line starting with "# " was skipped. The title comes from "title:" at the top, so do not repeat it in the article.`); i++; continue; }
+    if (/^# /.test(l)) { flush(); if (l.slice(2).trim().toLowerCase() !== String(title || "").trim().toLowerCase()) warn.push(`${file}: the line "${l.slice(0, 50)}" was skipped. Use ## for headings. The title comes from "title:" at the top.`); i++; continue; }
+    if ((m = l.match(/^-{3,}(!\[.*)$/))) { flush(); o += "<hr>"; L[i] = m[1]; continue; }
     if ((m = l.match(/^(##|###) (.+)$/))) {
       flush(); const n = m[1].length, base = slug(m[2]) || "section"; let id = base, k = 2; while (used[id]) id = base + "-" + k++; used[id] = 1;
       if (n === 2) toc.push({ id, text: m[2] });
@@ -67,7 +73,7 @@ function md(t, file) {
     }
     p.push(l.trim()); i++;
   }
-  flush(); return { html: o, toc };
+  flush(); return { html: o, toc, first };
 }
 
 // ---------- read articles ----------
@@ -78,22 +84,25 @@ const arts = fs.readdirSync(dir).filter((f) => f.endsWith(".md") && !f.startsWit
   if (!m) warn.push(`${f}: the top block between the two --- lines is missing or broken. The article is built without title/description.`);
   (m ? m[1] : "").split(/\r?\n/).forEach((l) => { const i = l.indexOf(":"); if (i > 0) meta[l.slice(0, i).trim()] = l.slice(i + 1).trim().replace(/^["']|["']$/g, ""); });
   if (/^(true|yes)$/i.test(meta.draft || "")) { console.log("Skipped draft: " + f); return null; }
-  const s = f.replace(/\.md$/, "");
-  if (!/^[a-z0-9-]+$/.test(s)) warn.push(`${f}: the file name becomes the web address. Use only small English letters, numbers and dashes, no spaces.`);
+  let s = f.replace(/\.md$/, "").trim(); // web address = file name (a "slug:" line in the article is ignored on purpose, so live addresses never change)
+  if (!/^[a-z0-9-]+$/.test(s)) { const fixed = slug(s) || "article"; warn.push(`${f}: the web address used "${fixed}" instead, because the name had capitals, spaces or symbols. Rename the file to ${fixed}.md to keep things tidy.`); s = fixed; }
   if (!meta.title) warn.push(`${f}: "title:" is missing.`);
   if (!meta.description) warn.push(`${f}: "description:" is missing. Google shows it under your title.`);
   else if (meta.description.length > 160) warn.push(`${f}: description is ${meta.description.length} characters. Keep it under 155 so Google does not cut it.`);
   else if (meta.description.length < 70) warn.push(`${f}: description is short (${meta.description.length} characters). Aim for 120 to 155.`);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(meta.date || "")) warn.push(`${f}: date must look like 2026-11-17 (year-month-day, with zeros).`);
   else if (meta.date > new Date().toISOString().slice(0, 10)) warn.push(`${f}: date ${meta.date} is in the future. It is still published now. Check the date.`);
-  let image = meta.image || "";
+  const body = md(m ? m[2] : raw, f, meta.title);
+  let image = meta.image ? normImg(meta.image) : "", imageAlt = meta.imageAlt || "";
   if (image && !checkImg(image, f)) image = "";
-  if (image && !meta.imageAlt) warn.push(`${f}: "imageAlt:" is missing. Describe the main picture in one short line.`);
-  const body = md(m ? m[2] : raw, f), words = body.html.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
+  if (!image && body.first) { image = body.first.src; imageAlt = imageAlt || body.first.alt; body.html = body.html.replace(body.first.html, ""); } // first picture in the article becomes the top banner
+  if (image && !imageAlt) warn.push(`${f}: "imageAlt:" is missing. Describe the main picture in one short line.`);
+  const words = body.html.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
   if (words < 300) warn.push(`${f}: only about ${words} words. Match previews usually need 500 or more to be useful.`);
-  return { slug: s, title: meta.title || s, desc: meta.description || "", date: meta.date || "2026-01-01", cat: meta.category || "Articles", image, imageAlt: meta.imageAlt || meta.title || "", author: meta.author || NAME, html: body.html, toc: body.toc, min: Math.max(1, Math.round(words / 200)) };
+  return { slug: s, title: meta.title || s, desc: meta.description || "", date: meta.date || "2026-01-01", cat: meta.category || "Articles", image, imageAlt: imageAlt || meta.title || "", author: meta.author || NAME, html: body.html, toc: body.toc, min: Math.max(1, Math.round(words / 200)) };
 }).filter(Boolean).sort((a, b) => b.date.localeCompare(a.date));
 
+{ const seen = {}; arts.forEach((a) => { if (seen[a.slug]) warn.push(`Two articles use the same web address "${a.slug}". One will overwrite the other.`); seen[a.slug] = 1; }); }
 const catMap = {}; arts.forEach((a) => { const k = slug(a.cat) || "articles"; (catMap[k] = catMap[k] || { name: a.cat, slug: k, list: [] }).list.push(a); });
 const cats = Object.values(catMap).sort((a, b) => b.list.length - a.list.length);
 
@@ -106,11 +115,9 @@ const side = (ex) => `<aside class="side"><section class="box live"><h2>Follow t
 const lay = (main, o = {}) => `<div class="w lay${o.flat ? " flat" : ""}"><div class="main">${main}</div>${side(o.ex)}</div>`;
 const hero = (o) => `<section class="hero${o.image ? "" : " noimg"}">${o.image ? `<img src="${esc(o.image)}" alt="${esc(o.alt || "")}" fetchpriority="high">` : ""}<div class="w hero-in">${o.tagHtml || ""}<${o.el}>${o.href ? `<a href="${o.href}">${esc(o.title)}</a>` : esc(o.title)}</${o.el}>${o.sub ? `<p class="sub">${esc(o.sub)}</p>` : ""}</div></section>`;
 
-const vercelAnalytics = `<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script><script defer src="/_vercel/insights/script.js"></script>`;
-
 function page(o) {
   const t = esc(o.title), im = o.image ? (isUrl(o.image) ? o.image : SITE + o.image) : "";
-  return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${t}</title><meta name="description" content="${esc(o.desc)}">${VERIFY ? `<meta name="google-site-verification" content="${esc(VERIFY)}">` : ""}<link rel="canonical" href="${SITE}${o.url}"><meta property="og:type" content="${o.type || "website"}"><meta property="og:site_name" content="${NAME}"><meta property="og:title" content="${t}"><meta property="og:description" content="${esc(o.desc)}"><meta property="og:url" content="${SITE}${o.url}">${im ? `<meta property="og:image" content="${esc(im)}">` : ""}<meta name="twitter:card" content="${im ? "summary_large_image" : "summary"}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"><link rel="stylesheet" href="/style.css">${o.ld ? '<script type="application/ld+json">' + JSON.stringify(o.ld) + "</script>" : ""}</head><body>${head()}<main>${o.body}</main>${foot()}${vercelAnalytics}</body></html>`;
+  return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${t}</title><meta name="description" content="${esc(o.desc)}">${VERIFY ? `<meta name="google-site-verification" content="${esc(VERIFY)}">` : ""}<link rel="canonical" href="${SITE}${o.url}"><meta property="og:type" content="${o.type || "website"}"><meta property="og:site_name" content="${NAME}"><meta property="og:title" content="${t}"><meta property="og:description" content="${esc(o.desc)}"><meta property="og:url" content="${SITE}${o.url}">${im ? `<meta property="og:image" content="${esc(im)}">` : ""}<meta name="twitter:card" content="${im ? "summary_large_image" : "summary"}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"><link rel="stylesheet" href="/style.css">${o.ld ? '<script type="application/ld+json">' + JSON.stringify(o.ld) + "</script>" : ""}</head><body>${head()}<main>${o.body}</main>${foot()}</body></html>`;
 }
 function write(p, html) { const f = path.join(OUT, p, "index.html"); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, html); }
 
@@ -149,6 +156,8 @@ const urls = [["/", ""], ["/articles/", ""], ["/about/", ""], ["/privacy-policy/
 fs.writeFileSync(path.join(OUT, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(([u, d]) => `<url><loc>${SITE}${u}</loc>${d ? `<lastmod>${d}</lastmod>` : ""}</url>`).join("")}</urlset>`);
 if (!fs.existsSync(path.join(OUT, "robots.txt"))) fs.writeFileSync(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 
+// articles.json: the KickPulse site reads this file to show the latest Pitchside Notes articles in its blue box.
+fs.writeFileSync(path.join(OUT, "articles.json"), JSON.stringify({ updated: new Date().toISOString(), articles: arts.slice(0, 12).map((a) => ({ title: a.title, description: a.desc, date: a.date, category: a.cat, url: `${SITE}/articles/${a.slug}/`, image: a.image ? SITE + a.image : "" })) }));
 console.log("Built " + arts.length + " articles");
 if (warn.length) { console.log("\n=== CHECK THESE " + warn.length + " THINGS (the site still built) ==="); warn.forEach((w) => console.log(" - " + w)); }
 else console.log("No problems found.");
