@@ -1,0 +1,15 @@
+# HOME PAGE SLIDER: one line = one slide. The FIRST line is the main slide (shown first). Slides change by themselves every 5 seconds.
+# To change the ORDER, just move lines up or down. To REMOVE a slide, delete its line (or put # in front of it).
+#
+# Two kinds of lines:
+#   1) article:file-name           -> uses that article's picture, title and link (file name WITHOUT .md)
+#   2) /images/picture.jpg | Title | Short text | /articles/file-name/ | Button text     -> your own banner (picture must be in static/images/)
+#
+# EXAMPLE for an Orlando City or Seattle Sounders picture as the MAIN slide (remove the # and use your real file name):
+# /images/orlando-city.jpg | Orlando City: preview and team news | Everything before kickoff | /articles/mls-match-preview-checklist/ | Read preview
+#
+article:mls-matches-today-games-tonight-guide
+article:mls-scores-today-live-results-guide
+article:singapore-v-brazil-prediction-live-score-time-tickets
+article:mls-match-preview-checklist
+article:major-league-soccer-live-scores-scoreboard-guide
