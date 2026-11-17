@@ -36,3 +36,8 @@ A short score pick with one reason. This is an opinion for fun, not betting advi
 
 ## Where to watch
 Point readers to the official broadcaster for their country.
+
+<!-- PICTURES (automatic): do NOT write picture lines in the article. Put pictures in static/images/ named like this article's file name:
+     <file-name>.jpg   = top picture (1600x900)
+     <file-name>-2.jpg, <file-name>-3.jpg, <file-name>-4.jpg = pictures placed inside the article automatically.
+     BACKLINKS: end the article with "## Sources and further reading" and 3 to 5 links to trusted sites (official club/league, ESPN, news sites). -->
