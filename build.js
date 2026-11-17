@@ -189,6 +189,11 @@ function buildSlides() {
   const out = []; let raw = readTxt("slider.txt");
   const lines = raw.split(/\r?\n/).map((l) => l.trim()).filter((l) => l && !l.startsWith("#"));
   for (const l of lines) {
+    if (/^latest(:\d+)?$/i.test(l)) { // latest:6 = add the 6 newest articles that are not already in the slider
+      const n = parseInt(l.split(":")[1] || "5", 10);
+      arts.filter((a) => !out.some((o) => o.href === `/articles/${a.slug}/`) && !lines.some((x) => x.toLowerCase().startsWith("article:" + a.slug))).slice(0, n).forEach((a) => out.push({ img: a.cover.src, alt: a.cover.alt, tag: a.cat, title: a.title, text: a.desc, href: `/articles/${a.slug}/`, btn: "Read now" }));
+      continue;
+    }
     if (/^article:/i.test(l)) {
       const parts = l.slice(8).split("|").map((x) => x.trim()), a = arts.find((x) => x.slug === parts[0]);
       if (!a) { warn.push(`slider.txt: article "${parts[0]}" was not found. Use the exact file name without .md.`); continue; }
@@ -200,7 +205,7 @@ function buildSlides() {
     }
   }
   if (!out.length) arts.slice(0, 5).forEach((a) => out.push({ img: a.cover.src, alt: a.cover.alt, tag: a.cat, title: a.title, text: a.desc, href: `/articles/${a.slug}/`, btn: "Read now" }));
-  return out.slice(0, 8);
+  return out.slice(0, 20);
 }
 function sliderHtml() {
   const S = buildSlides(); if (!S.length) return "";
