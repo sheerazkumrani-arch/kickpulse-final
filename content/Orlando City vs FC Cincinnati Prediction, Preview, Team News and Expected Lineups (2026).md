@@ -5,6 +5,8 @@ description: Orlando City and FC Cincinnati meet in an important Eastern Confere
 The match will take place at Inter&Co Stadium in Orlando on Thursday, November 19, at 7:30 PM Eastern Time. For football fans in Pakistan, the match starts at 5:30 AM on Friday, November 20.
 date: 2026-11-17
 category: Match previews
+image: /images/orlando-city-vs-fc-cincinnati-wildcard-hero.jpg
+imageAlt: Orlando City vs FC Cincinnati Eastern Conference Wild Card match preview graphic
 ---
 The first thing to check before watching an MLS match is its actual kickoff time. MLS fixtures are played across different North American time zones, which can make scheduling confusing for international supporters.
 
