@@ -7,6 +7,7 @@ date: "2026-11-18"
 lastmod: "2026-11-18"
 author: "KickPulse Editorial Team"
 category: "Copa del Rey"
+2026-11-18T23:00:00+05:00
 tags: ["Alcoyano vs Mallorca", "Alcoyano vs Mallorca prediction", "Copa del Rey 2026", "Copa del Rey first round", "Copa del Rey prediction", "Alcoyano", "Mallorca", "Estadio El Collao", "football preview"]
 image: "/images/alcoyano-vs-mallorca/copa-del-rey-alcoyano-vs-mallorca-hero-banner.jpg"
 image_alt: "Alcoyano vs Mallorca Copa del Rey 2026 first round banner with date, kick-off time and Estadio El Collao"
