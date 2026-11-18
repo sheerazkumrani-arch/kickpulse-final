@@ -1,24 +1,24 @@
 ---
-title: "Alcoyano vs Mallorca: Prediction, Kick-Off Time, TV & Team News – Copa del Rey 2026"
+title: "Alcoyano vs Mallorca Prediction, Kick-Off Time, TV & Team News – Copa del Rey 2026"
 seo_title: "Alcoyano vs Mallorca: Prediction, Time, TV & Team News"
-description: "Alcoyano vs Mallorca Copa del Rey preview: kick-off 20:00 CET (00:00 PKT), TV on À Punt & IB3, recent form, team news and our prediction."
+description: "Alcoyano vs Mallorca Copa del Rey preview: kick-off 20:00 CET (00:00 PKT), TV on À Punt & IB3, form guide, team news and our score prediction."
 slug: "alcoyano-vs-mallorca-copa-del-rey-preview-prediction"
 date: "2026-11-18"
 lastmod: "2026-11-18"
 author: "KickPulse Editorial Team"
 category: "Copa del Rey"
-tags: ["Alcoyano vs Mallorca", "Copa del Rey 2026", "Copa del Rey prediction", "Alcoyano", "Mallorca", "El Collao", "football preview"]
+tags: ["Alcoyano vs Mallorca", "Alcoyano vs Mallorca prediction", "Copa del Rey 2026", "Copa del Rey first round", "Copa del Rey prediction", "Alcoyano", "Mallorca", "Estadio El Collao", "football preview"]
 image: "/images/alcoyano-vs-mallorca/copa-del-rey-alcoyano-vs-mallorca-hero-banner.jpg"
-image_alt: "Alcoyano vs Mallorca Copa del Rey 2026 banner with date, kick-off time and venue"
+image_alt: "Alcoyano vs Mallorca Copa del Rey 2026 first round banner with date, kick-off time and Estadio El Collao"
 ---
 
 # Alcoyano vs Mallorca Prediction, Kick-Off Time, TV & Team News – Copa del Rey 2026
 
-![Alcoyano vs Mallorca Copa del Rey 2026 banner with date, kick-off time and venue](/images/alcoyano-vs-mallorca/copa-del-rey-alcoyano-vs-mallorca-hero-banner.webp)
+![Alcoyano vs Mallorca Copa del Rey 2026 first round banner with date, kick-off time and Estadio El Collao](/images/alcoyano-vs-mallorca/copa-del-rey-alcoyano-vs-mallorca-hero-banner.jpg)
 
 ## Quick Answer: Alcoyano vs Mallorca at a Glance
 
-**Alcoyano vs Mallorca** is a Copa del Rey first-round tie played on **Wednesday, 18 November 2026 at 20:00 CET** (19:00 GMT, **00:00 PKT on 19 November**) at **Estadio El Collao** in Alcoy, Spain. Fourth-tier **CD Alcoyano** host **RCD Mallorca**, who play in the **Segunda División** this season. In Spain the match is shown on **À Punt** and **IB3**. We predict a **Mallorca win, 2-0**, but Alcoyano have a proven record of cup upsets.
+**Alcoyano vs Mallorca** is a Copa del Rey 2026 first-round tie on **Wednesday, 18 November 2026 at 20:00 CET** (19:00 GMT, **00:00 PKT on 19 November**) at **Estadio El Collao** in Alcoy, Spain. Fourth-tier **CD Alcoyano** host **RCD Mallorca**, who play in the **Segunda División** this season. In Spain the match is shown on **À Punt** and **IB3**. Our **Alcoyano vs Mallorca prediction** is a **Mallorca win, 2-0**, but Alcoyano have a proven record of cup upsets.
 
 | Detail | Info |
 |---|---|
@@ -32,33 +32,30 @@ image_alt: "Alcoyano vs Mallorca Copa del Rey 2026 banner with date, kick-off ti
 
 ## Why Was Alcoyano vs Mallorca Rescheduled?
 
-The tie was originally set for 28 October 2026. According to the Spanish federation (RFEF) and club announcements, it was **postponed twice as a mark of mourning**, first after the railway accident at Urda in Toledo province and then after the death of Tenerife forward Jesús de Miguel. The RFEF later confirmed the new date of 18 November. Alcoyano have said that **tickets bought for the original date remain valid**.
+This Copa del Rey tie was originally set for 28 October 2026. According to the Spanish federation (RFEF) and club announcements, it was **postponed twice as a mark of mourning**, first after the railway accident at Urda in Toledo province and then after the death of Tenerife forward Jesús de Miguel. The RFEF later confirmed the new date of 18 November. Alcoyano have said that **tickets bought for the original date remain valid**.
 
 ## The Giant-Killer Reputation of CD Alcoyano
 
-Alcoyano are one of Spain's oldest clubs. They reached La Liga for the first time in 1945 after winning the Segunda División, and today they play in the **Segunda Federación**, the fourth tier of Spanish football. They are still best known in cup football for their **2-1 home win over Real Madrid in the 2020/21 Copa del Rey**, a result that made headlines across Europe. In the next round they pushed Athletic Club hard before losing 2-1.
+Alcoyano are one of Spain's oldest clubs. They reached La Liga for the first time in 1945 after winning the Segunda División, and today they play in the **Segunda Federación**, the fourth tier of Spanish football. In cup football they are best known for their **2-1 home win over Real Madrid in the 2020/21 Copa del Rey**, a result that made headlines across Europe. In the next round they pushed Athletic Club hard before losing 2-1.
 
-That history matters here. A compact home ground, a vocal crowd and a single-leg format all shrink the gap between divisions. Expect Alcoyano to defend in a compact block, stay disciplined and look for set pieces and counter-attacks.
-
-![Illustration of a Copa del Rey tackle between a blue-and-white striped player and a red-and-black player](/images/alcoyano-vs-mallorca/tackle-copa-del-rey-alcoyano-mallorca-illustration.webp)
-*Illustrative AI-generated image, not a photo from the match.*
+That history matters for this Copa del Rey first-round tie. A compact home ground at **Estadio El Collao**, a vocal crowd and a single-match format all shrink the gap between divisions. Expect Alcoyano to defend in a compact block, stay disciplined and look for set pieces and counter-attacks.
 
 ## Mallorca's Tactical Approach and Squad Rotation
 
 Mallorca reached the Copa del Rey final in 2024, where they lost to Athletic Club on penalties after a 1-1 draw, so they know how far this competition can go. This season they are in the Segunda División, and a recent preview described them as one point outside the promotion play-off places, with one of the division's best defensive records.
 
-Clubs from higher divisions often rotate in early cup rounds, but Mallorca's league priorities make this less clear-cut: a second-tier side chasing promotion cannot afford a cup embarrassment, yet also needs to protect key players. The visitors will aim to control possession, move the ball quickly and score early. The longer the game stays level, the more the home crowd will believe.
+Clubs from higher divisions often rotate in early cup rounds, but Mallorca's league priorities make this less clear-cut. A second-tier side chasing promotion cannot afford a cup embarrassment, yet it also needs to protect key players. The visitors will aim to control possession, move the ball quickly and score early. The longer the game stays level, the more the home crowd will believe.
 
 ## Alcoyano vs Mallorca Team News and Predicted Lineups
 
-**Official lineups have not been confirmed at the time of writing.** Starting elevens are normally published about an hour before kick-off on the clubs' official channels, and we will update this page when they are released. Because we cannot verify the squads, we are not publishing a predicted XI with individual names. Based on how both teams typically approach single-leg cup ties, this is what to expect:
+**Official lineups have not been confirmed at the time of writing.** Starting elevens are normally published about an hour before kick-off on the clubs' official channels, and we will update this page when they are released. Because we cannot verify the squads, we are not publishing a predicted XI with individual names. Based on how both teams usually approach single-match cup ties, this is what to expect:
 
 - **Alcoyano:** their strongest available side, a low defensive block and quick transitions.
 - **Mallorca:** a mix of regular starters and squad players, with the balance depending on the weekend's league schedule.
 
-## Form Guide and Head-to-Head Record
+## Alcoyano vs Mallorca Form Guide and Head-to-Head Record
 
-![Form guide: Alcoyano 2 wins, 1 draw, 2 defeats; Mallorca 2 wins, 3 draws, 0 defeats in their last five matches](/images/alcoyano-vs-mallorca/alcoyano-vs-mallorca-form-guide.webp)
+![Alcoyano vs Mallorca form guide for the last five matches: Alcoyano 2 wins, 1 draw, 2 defeats; Mallorca 2 wins, 3 draws, 0 defeats](/images/alcoyano-vs-mallorca/alcoyano-vs-mallorca-form-guide.jpg)
 
 | Team | Last five matches (all competitions) |
 |---|---|
@@ -67,9 +64,9 @@ Clubs from higher divisions often rotate in early cup rounds, but Mallorca's lea
 
 Mallorca arrive unbeaten in their last five, while Alcoyano have been irregular but remain in the upper part of their group, within reach of the promotion places. We have not found a complete, reliable head-to-head record for these two clubs in competitive matches, so we are not quoting one rather than risk publishing an unverified number.
 
-## Where to Watch Alcoyano vs Mallorca Live
+## What Time Is Alcoyano vs Mallorca? Kick-Off Times by Country
 
-**What time is Alcoyano vs Mallorca?** Kick-off is 20:00 CET on Wednesday 18 November 2026.
+**What time is Alcoyano vs Mallorca?** Kick-off is at 20:00 CET on Wednesday 18 November 2026. For fans in Pakistan, that means **00:00 PKT, just after midnight on 19 November**.
 
 | Region | Local kick-off time |
 |---|---|
@@ -79,16 +76,17 @@ Mallorca arrive unbeaten in their last five, while Alcoyano have been irregular 
 | USA – West Coast (PT) | 11:00 |
 | Pakistan (PKT) | 00:00 (19 November) |
 
-![Alcoyano vs Mallorca kick-off times by country: Spain 20:00, UK 19:00, US East 14:00, US West 11:00, Pakistan 00:00](/images/alcoyano-vs-mallorca/alcoyano-vs-mallorca-kick-off-times.webp)
+![Alcoyano vs Mallorca kick-off times by country: Spain 20:00, UK 19:00, US East 14:00, US West 11:00, Pakistan 00:00](/images/alcoyano-vs-mallorca/alcoyano-vs-mallorca-kick-off-times.jpg)
 
-**TV in Spain:** regional broadcasters **À Punt** and **IB3** are showing the match live. **Outside Spain:** broadcasters can change at short notice and no international streaming platform was confirmed when we published this page. Check your local sports broadcaster or official Copa del Rey rights holder, and only use licensed services.
+## Where to Watch Alcoyano vs Mallorca Live on TV
 
-![Goalkeeper in yellow dives to stop a shot in front of a floodlit stadium crowd](/images/alcoyano-vs-mallorca/goalkeeper-save-copa-del-rey-cup-upset.webp)
-*Illustrative AI-generated image of a cup-night save, not from this match.*
+**TV in Spain:** the regional broadcasters **À Punt** and **IB3** are showing Alcoyano vs Mallorca live.
+
+**Outside Spain:** broadcasters can change at short notice, and no international streaming platform was confirmed when we published this page. Check your local sports broadcaster or the official Copa del Rey rights holder, and only use licensed services.
 
 ## Alcoyano vs Mallorca Prediction
 
-![Alcoyano vs Mallorca prediction: Alcoyano 0, Mallorca 2, with three key factors](/images/alcoyano-vs-mallorca/alcoyano-vs-mallorca-prediction-score.webp)
+![Alcoyano vs Mallorca prediction: Alcoyano 0, Mallorca 2, with three key factors](/images/alcoyano-vs-mallorca/alcoyano-vs-mallorca-prediction-score.jpg)
 
 **Our prediction: CD Alcoyano 0-2 RCD Mallorca.**
 
@@ -120,7 +118,7 @@ It was moved twice as a mark of mourning, after the Urda railway accident and af
 Yes. In the 2020/21 Copa del Rey, Alcoyano beat Real Madrid 2-1 at home.
 
 ### What is the Alcoyano vs Mallorca prediction?
-We predict a 2-0 win for Mallorca, but a first-round cup tie at El Collao is rarely straightforward.
+We predict a 2-0 win for Mallorca, but a Copa del Rey first-round tie at El Collao is rarely straightforward.
 
 ## Sources and Update Note
 
