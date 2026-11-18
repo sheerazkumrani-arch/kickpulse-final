@@ -164,7 +164,9 @@ const lay = (main, o = {}) => `<div class="w lay"><div class="main">${main}</div
 const pagehead = (h, sub) => `<div class="w"><h1 class="pagehead">${esc(h)}</h1>${sub ? `<p class="psub">${esc(sub)}</p>` : ""}</div>`;
 const listPage = (h, list, extra = "") => pagehead(h) + `<div class="w">${extra}<div class="cards">${list.map(card).join("")}</div></div>`;
 
-function page(o) { return page0(o).replace("</head>", '<link rel="stylesheet" href="/slider.css"></head>'); }
+// Vercel Web Analytics (official plain-HTML snippet). It only counts visits after Analytics is switched ON in the Vercel dashboard (project > Analytics tab > Enable).
+const ANALYTICS = '<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script><script defer src="/_vercel/insights/script.js"></script>';
+function page(o) { return page0(o).replace("</head>", '<link rel="stylesheet" href="/slider.css">' + ANALYTICS + "</head>"); }
 function page0(o) {
   const t = esc(o.title), im = o.image ? (isUrl(o.image) ? o.image : SITE + o.image) : SITE + "/og-default.jpg", ogIm = /\.svg$/.test(im) ? SITE + "/og-default.jpg" : im;
   return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${t}</title><meta name="description" content="${esc(o.desc)}">${VERIFY ? `<meta name="google-site-verification" content="${esc(VERIFY)}">` : ""}<link rel="canonical" href="${SITE}${o.url}"><meta property="og:type" content="${o.type || "website"}"><meta property="og:site_name" content="${NAME}"><meta property="og:title" content="${t}"><meta property="og:description" content="${esc(o.desc)}"><meta property="og:url" content="${SITE}${o.url}"><meta property="og:image" content="${esc(ogIm)}"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"><link rel="stylesheet" href="/style.css">${o.ld ? '<script type="application/ld+json">' + JSON.stringify(o.ld) + "</script>" : ""}</head><body>${head()}<main>${o.body}</main>${foot()}</body></html>`;
@@ -181,13 +183,15 @@ const widget = `<section class="today panel"><h2>MLS matches today</h2><div id="
 
 
 // ---------- HOME SLIDER ----------
-// You control it with the file slider.txt (top of the project). One line = one slide, the first line is the main slide.
+// The NEWEST article (newest "date:") is always the first slide, automatically.
+// After it, the slides follow the file slider.txt (top of the project). One line = one slide.
 //   article:file-name-of-article            (takes picture, title and link from that article)
 //   /images/pic.jpg | Title | Short text | /articles/some-article/ | Button text     (your own banner)
 // If slider.txt is missing or empty, the 5 newest articles are shown.
 function buildSlides() {
   const out = []; let raw = readTxt("slider.txt");
   const lines = raw.split(/\r?\n/).map((l) => l.trim()).filter((l) => l && !l.startsWith("#"));
+  if (arts[0]) out.push({ img: arts[0].cover.src, alt: arts[0].cover.alt, tag: arts[0].cat, title: arts[0].title, text: arts[0].desc, href: `/articles/${arts[0].slug}/`, btn: "Read now" }); // newest article = first slide
   for (const l of lines) {
     if (/^latest(:\d+)?$/i.test(l)) { // latest:6 = add the 6 newest articles that are not already in the slider
       const n = parseInt(l.split(":")[1] || "5", 10);
@@ -197,6 +201,7 @@ function buildSlides() {
     if (/^article:/i.test(l)) {
       const parts = l.slice(8).split("|").map((x) => x.trim()), a = arts.find((x) => x.slug === parts[0]);
       if (!a) { warn.push(`slider.txt: article "${parts[0]}" was not found. Use the exact file name without .md.`); continue; }
+      if (out.some((o) => o.href === `/articles/${a.slug}/`)) continue; // already in the slider (for example the newest article)
       out.push({ img: a.cover.src, alt: a.cover.alt, tag: a.cat, title: parts[1] || a.title, text: a.desc, href: `/articles/${a.slug}/`, btn: "Read now" });
     } else {
       const p = l.split("|").map((x) => x.trim()), src = normImg(p[0] || "");
@@ -204,7 +209,7 @@ function buildSlides() {
       out.push({ img: src, alt: p[1] || "", tag: "", title: p[1] || "", text: p[2] || "", href: p[3] || "/articles/", btn: p[4] || "Read now" });
     }
   }
-  if (!out.length) arts.slice(0, 5).forEach((a) => out.push({ img: a.cover.src, alt: a.cover.alt, tag: a.cat, title: a.title, text: a.desc, href: `/articles/${a.slug}/`, btn: "Read now" }));
+  if (out.length < 2) arts.slice(0, 5).forEach((a) => { if (!out.some((o) => o.href === `/articles/${a.slug}/`)) out.push({ img: a.cover.src, alt: a.cover.alt, tag: a.cat, title: a.title, text: a.desc, href: `/articles/${a.slug}/`, btn: "Read now" }); });
   return out.slice(0, 20);
 }
 function sliderHtml() {
@@ -218,7 +223,7 @@ const f0 = arts[0];
 write("", page({
   title: `${NAME} | MLS previews, team news and match analysis`, desc: "MLS match previews, predicted lineups, team news, injury updates and match analysis, written for fans. Updated through the season.", url: "/", image: f0 && f0.image,
   body: pagehead("Pitchside Notes: MLS and football previews, guides and match news", "Match previews, predicted lineups, team news and international football guides, in plain English.") +
-    `<div class="w"><div class="home-top">${sliderHtml()}<aside class="side">${liveBox()}</aside></div><section class="sec">${widget}</section>${arts.length > 1 ? `<section class="sec"><h2 class="sh">Latest articles</h2><div class="cards">${arts.slice(1, 13).map(card).join("")}</div></section>` : ""}</div>`,
+    `<div class="w"><div class="home-top">${sliderHtml()}<aside class="side">${liveBox()}</aside></div><section class="sec">${widget}</section>${arts.length ? `<section class="sec"><h2 class="sh">Latest articles</h2><div class="cards">${arts.map(card).join("")}</div></section>` : ""}</div>`,
   ld: { "@context": "https://schema.org", "@type": "WebSite", name: NAME, url: SITE + "/" }
 }));
 // All articles (with search) + categories
