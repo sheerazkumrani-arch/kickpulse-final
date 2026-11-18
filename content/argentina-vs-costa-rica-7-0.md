@@ -5,6 +5,7 @@ meta_description: "Argentina crushed Costa Rica 7-0 in Córdoba. Read the goals,
 focus_keyword: "Argentina vs Costa Rica 7-0"
 tags: [Argentina, Costa Rica, Nico Paz, Mastantuono, Julián Álvarez, international friendly]
 featured_image: images/argentina-vs-costa-rica-7-0.jpg
+date: 2026-11-18T07:45:00+05:00
 ---
 
 # Argentina Bounce Back After Uruguay Loss with 7-0 Rout of Costa Rica
