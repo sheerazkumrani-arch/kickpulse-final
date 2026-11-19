@@ -8,21 +8,21 @@ description: "The Nations League quarter-final draw is on 20 November in Nyon. S
 meta_description: "The Nations League quarter-final draw is on 20 November in Nyon. See who can face who, Norway’s first quarter-final and Portugal’s life after Ronaldo."
 og_title: "Nations League Quarter-Final Draw 2026/27: Who Faces Who?"
 og_description: "The Nations League quarter-final draw is on 20 November in Nyon. See who can face who, Norway’s first quarter-final and Portugal’s life after Ronaldo."
-og_image: images/nations-league-quarter-final-draw-hero-2026-27.jpg
+og_image: images/nl-qf-2026-27-hero-banner.jpg
 focus_keyword: Nations League quarter-final draw
 tags: [Nations League, quarter-final draw, England, Germany, France, Portugal, Norway, Haaland, Kane, Ronaldo]
-featured_image: images/nations-league-quarter-final-draw-hero-2026-27.jpg
+featured_image: images/nl-qf-2026-27-hero-banner.jpg
 ---
 
 # Nations League Quarter-Final Draw 2026/27: Who Faces Who?
 
-![Nations League quarter-final draw 2026/27 hero banner: 8 qualified teams, 4 seeded winners, 2 legs in March 2027](images/nations-league-quarter-final-draw-hero-2026-27.jpg)
+![Nations League quarter-final draw 2026/27 hero banner: 8 qualified teams, 4 seeded winners, 2 legs in March 2027](images/nl-qf-2026-27-hero-banner.jpg)
 
 By **Sheraz Khan** · [Pitchside Notes](https://kickpulse-final.vercel.app/) · Last updated: 19 November 2026
 
 The 2026/27 UEFA Nations League quarter-final draw takes place on **Friday 20 November 2026** in Nyon, Switzerland, at 12:00 CET (4:00 PM in Pakistan). France, Germany, England and Portugal are the seeded group winners. They will face Belgium, the Netherlands, Spain or Norway over two legs on 25–30 March 2027. Here is who can meet whom, and the stories behind all eight qualified teams.
 
-![Nations League quarter-final draw 2026/27 date, time and format: group winners and runners-up with points, plus the draw and two-leg timeline](images/nations-league-quarter-final-draw-2026-27.jpg)
+![Nations League quarter-final draw 2026/27 date, time and format: group winners and runners-up with points, plus the draw and two-leg timeline](images/nl-qf-2026-27-draw-format.jpg)
 
 ## Nations League Quarter-Final Draw 2026/27: Date, Time and Format
 
@@ -50,7 +50,7 @@ Germany and the Netherlands finished level on 11 points with Greece, and Germany
 
 ## Possible Quarter-Final Matchups: Who Can Face Who?
 
-![Possible Nations League quarter-final matchups grid: which seeded teams can face which unseeded teams, with same-group pairs blocked](images/nations-league-quarter-final-possible-matchups.jpg)
+![Possible Nations League quarter-final matchups grid: which seeded teams can face which unseeded teams, with same-group pairs blocked](images/nl-qf-2026-27-possible-matchups.jpg)
 
 | Seeded team | Possible opponents | What to watch |
 |---|---|---|
@@ -79,7 +79,7 @@ Portugal then lost 4–1 at home to Denmark on 14 November. They bounced back wi
 
 ## Nations League Play-Offs: Who Is in Danger?
 
-![Nations League 2026/27 League A/B play-offs: Croatia, Denmark, Serbia and Wales against Slovenia, Hungary, Republic of Ireland and Bosnia and Herzegovina](images/nations-league-play-offs-relegation-2026-27.jpg)
+![Nations League 2026/27 League A/B play-offs: Croatia, Denmark, Serbia and Wales against Slovenia, Hungary, Republic of Ireland and Bosnia and Herzegovina](images/nl-qf-2026-27-play-offs.jpg)
 
 - **Stay in League A:** Italy (third in Group A1, 10 points) and Greece (third in Group A2, 11 points)
 - **League A/B play-offs:** Croatia and Denmark (third-placed), Serbia and Wales (fourth-placed)
@@ -139,10 +139,10 @@ Yes. He announced his retirement from international football on 5 November 2026 
       "headline": "Nations League Quarter-Final Draw 2026/27: Who Faces Who?",
       "description": "The Nations League quarter-final draw is on 20 November in Nyon. See who can face who, Norway’s first quarter-final and Portugal’s life after Ronaldo.",
       "image": [
-        "https://kickpulse-final.vercel.app/static/images/nations-league-quarter-final-draw-hero-2026-27.jpg",
-        "https://kickpulse-final.vercel.app/static/images/nations-league-quarter-final-draw-2026-27.jpg",
-        "https://kickpulse-final.vercel.app/static/images/nations-league-quarter-final-possible-matchups.jpg",
-        "https://kickpulse-final.vercel.app/static/images/nations-league-play-offs-relegation-2026-27.jpg"
+        "https://kickpulse-final.vercel.app/static/images/nl-qf-2026-27-hero-banner.jpg",
+        "https://kickpulse-final.vercel.app/static/images/nl-qf-2026-27-draw-format.jpg",
+        "https://kickpulse-final.vercel.app/static/images/nl-qf-2026-27-possible-matchups.jpg",
+        "https://kickpulse-final.vercel.app/static/images/nl-qf-2026-27-play-offs.jpg"
       ],
       "datePublished": "2026-11-19T12:00:00+05:00",
       "dateModified": "2026-11-19T12:00:00+05:00",
