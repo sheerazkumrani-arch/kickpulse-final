@@ -1,16 +1,18 @@
 ---
-title: "Can Mauricio Pochettino Save Manchester United Despite His Trophyless Record?"
+title: "Pochettino at Man United: Can a Trophyless Manager Win?"
 slug: pochettino-manchester-united-trophyless-record
-meta_description: "Man United are 18th after their worst start in 40 years. Can Mauricio Pochettino, with no English trophies, rescue them? Fixtures, fitness and verdict."
+meta_description: "Pochettino is Man United's new manager. 18th in the table, 1 win in 10. Read his trophyless record, first 5 fixtures and our verdict."
 focus_keyword: "Pochettino Manchester United"
 tags: [Pochettino, Manchester United, Premier League, Man United manager, Liverpool vs Man United]
-featured_image: images/pochettino-man-united-hero.png
+og_description: "Pochettino is Man United's new manager. 18th in the table, 1 win in 10. Read his trophyless record, first 5 fixtures and our verdict."
+featured_image: images/pochettino-man-united-hero.jpg
+og_image: images/pochettino-man-united-hero.jpg
 date: 2026-11-18T23:30:00+05:00
 ---
 
 # Can Mauricio Pochettino Save Manchester United Despite His Trophyless Record?
 
-![Mauricio Pochettino at Manchester United: can a trophyless manager save the club?](images/pochettino-man-united-hero.png)
+![Mauricio Pochettino at Manchester United: can a trophyless manager save the club?](images/pochettino-man-united-hero.jpg)
 
 *Last updated: November 19, 2026. This article is updated after every Manchester United match. For live results, check [live Premier League scores on KickPulse](https://kickpulse-football.vercel.app/).*
 
@@ -18,7 +20,7 @@ date: 2026-11-18T23:30:00+05:00
 
 ### Key Facts
 
-![Key facts about Pochettino's appointment as Manchester United manager](images/man-united-pochettino-key-facts.png)
+![Key facts about Pochettino's appointment as Manchester United manager](images/man-united-pochettino-key-facts.jpg)
 
 - **Manager:** Mauricio Pochettino, replacing Michael Carrick
 - **Start date:** November 18, 2026
@@ -40,7 +42,7 @@ Pochettino has moved quickly to reshape the staff. His long-time assistants Jesu
 
 Pochettino's record is the main criticism of this appointment. He has managed 344 matches at Premier League "Big Six" clubs, including 293 with Tottenham Hotspur and a spell at Chelsea, without winning a major trophy. That is an unusually long run for a manager at that level.
 
-![Mauricio Pochettino's career timeline from Espanyol to the USMNT, showing no trophies in England](images/pochettino-career-timeline.png)
+![Mauricio Pochettino's career timeline from Espanyol to the USMNT, showing no trophies in England](images/pochettino-career-timeline.jpg)
 
 His career has been full of near-misses:
 
@@ -63,7 +65,7 @@ Survival and stability come before trophies. Pochettino is known for high-intens
 
 There is no easy start. His first five games will test the squad's mentality straight away, beginning with the big one: Liverpool vs Manchester United at Anfield.
 
-![Manchester United's first five fixtures under Pochettino: Liverpool, Sporting CP, Brentford, Newcastle and Coventry](images/man-united-first-five-fixtures.png)
+![Manchester United's first five fixtures under Pochettino: Liverpool, Sporting CP, Brentford, Newcastle and Coventry](images/man-united-first-five-fixtures.jpg)
 
 | Date | Opponent | Venue | Competition |
 |---|---|---|---|
@@ -96,3 +98,31 @@ Liverpool, away at Anfield, on Sunday, November 22, 2026.
 ---
 
 *Related: [Live football scores](https://kickpulse-football.vercel.app/) | [More football articles](https://kickpulse-final.vercel.app/)*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "NewsArticle",
+      "headline": "Pochettino at Man United: Can a Trophyless Manager Win?",
+      "description": "Pochettino is Man United's new manager. 18th in the table, 1 win in 10. Read his trophyless record, first 5 fixtures and our verdict.",
+      "image": ["https://kickpulse-final.vercel.app/images/pochettino-man-united-hero.jpg"],
+      "datePublished": "2026-11-18T23:30:00+05:00",
+      "dateModified": "2026-11-19T12:00:00+05:00",
+      "mainEntityOfPage": "https://kickpulse-final.vercel.app/articles/pochettino-manchester-united-trophyless-record/",
+      "author": { "@type": "Organization", "name": "KickPulse" },
+      "publisher": { "@type": "Organization", "name": "KickPulse", "url": "https://kickpulse-final.vercel.app/" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "When did Pochettino become Manchester United manager?", "acceptedAnswer": { "@type": "Answer", "text": "He started on November 18, 2026, replacing Michael Carrick, on a contract until summer 2029." } },
+        { "@type": "Question", "name": "Where is Manchester United in the Premier League table?", "acceptedAnswer": { "@type": "Answer", "text": "United are 18th, in the relegation zone, with one win from their first 10 league games." } },
+        { "@type": "Question", "name": "Has Pochettino ever won a major trophy?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, at Paris Saint-Germain, where he won Ligue 1 and the Coupe de France. He has won no major trophy at Tottenham, Chelsea or with the USMNT." } },
+        { "@type": "Question", "name": "Who is Pochettino's first opponent at Manchester United?", "acceptedAnswer": { "@type": "Answer", "text": "Liverpool, away at Anfield, on Sunday, November 22, 2026." } }
+      ]
+    }
+  ]
+}
+</script>
