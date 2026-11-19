@@ -3,30 +3,12 @@ title: "Sounders vs RSL: MLS Scores Today, Kickoff & Playoff Preview"
 slug: "seattle-sounders-vs-real-salt-lake-mls-scores-kickoff-preview"
 description: "Follow MLS scores today as Seattle host Real Salt Lake in a win-or-go-home playoff clash. Kickoff time, form, key players, injuries and predictions."
 date: "2026-11-20"
-author: "KickPulse"
+author: "Sheeraz Khan"
 category: "MLS"
 tags: ["MLS scores", "MLS Cup Playoffs", "Seattle Sounders", "Real Salt Lake", "MLS games tonight"]
 featured_image: "/images/sea-rsl-wildcard-2026-hero-banner.jpg"
 og_image: "/images/sea-rsl-wildcard-2026-hero-banner.jpg"
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  "headline": "Sounders vs RSL: MLS Scores Today, Kickoff & Playoff Preview",
-  "description": "Follow MLS scores today as Seattle host Real Salt Lake in a win-or-go-home playoff clash. Kickoff time, form, key players, injuries and predictions.",
-  "datePublished": "2026-11-20",
-  "author": { "@type": "Organization", "name": "KickPulse" },
-  "publisher": { "@type": "Organization", "name": "KickPulse" },
-  "image": [
-    "/images/sea-rsl-wildcard-2026-hero-banner.jpg",
-    "/images/sea-rsl-wildcard-2026-form-table.jpg",
-    "/images/sea-rsl-wildcard-2026-key-players.jpg",
-    "/images/sea-rsl-wildcard-2026-team-news.jpg"
-  ]
-}
-</script>
 
 # Seattle Sounders vs Real Salt Lake: MLS Scores, Kickoff Time and a Win-or-Go-Home Showdown
 
