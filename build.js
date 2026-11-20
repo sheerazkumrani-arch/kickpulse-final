@@ -9,6 +9,9 @@ const SITE = "https://kickpulse-final.vercel.app";          // your site address
 const NAME = "Pitchside Notes";
 const KP = "https://kickpulse-football.vercel.app";          // your KickPulse scores site
 const KPL = [["/mls-live-scores/", "MLS live scores today"], ["/mls-schedule/", "MLS schedule"], ["/mls-on-tv/", "MLS on TV"], ["/mls-playoffs/", "MLS playoffs matches today"], ["/inter-miami-live-score/", "Inter Miami live score"]];
+// Home page: moving green strip and the numbers row. Edit the words freely.
+const TICKER = ["MLS previews", "Team news", "Predicted lineups", "Match analysis", "Live scores"];
+const STATS = () => [[String(arts.length), "Match articles"], [String(cats.length), "Topics covered"], ["100%", "Free to read"]]; // 3rd one is plain text: change it if you like
 const kpLinks = () => KPL.map((l) => `<a href="${KP}${l[0]}" rel="noopener">${l[1]}</a>`).join("");
 // Search Console "HTML tag" code: put ONLY the content value in the file verify.txt (see README). Nothing to edit here.
 const readTxt = (f) => { try { return fs.readFileSync(path.join(ROOT, f), "utf8").trim(); } catch (e) { return ""; } };
@@ -17,7 +20,7 @@ const VERIFY = readTxt("verify.txt");
 // ---------- helpers ----------
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
-const fmt = (d) => { const x = new Date(d + "T00:00:00Z"); return isNaN(x) ? d : x.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }); };
+const fmt = (d) => { const dm = String(d).match(/^(\d{4}-\d{2}-\d{2})/), x = new Date((dm ? dm[1] : d) + "T00:00:00Z"); return isNaN(x) ? d : x.toLocaleDateString("en-GB", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }); };
 const isUrl = (u) => /^https?:\/\//.test(u);
 const normImg = (u) => (isUrl(u) || u.startsWith("/") ? u : "/" + u);
 function imgState(src) { // "ok" | "missing" | "case"
@@ -73,6 +76,7 @@ function md(t, file, title) {
       const sep = rows.length > 1 && rows[1].every((c) => /^:?-+:?$/.test(c)), body = sep ? rows.slice(2) : rows;
       o += `<div class="tw"><table>${sep ? "<thead><tr>" + rows[0].map((c) => "<th>" + inl(c) + "</th>").join("") + "</tr></thead>" : ""}<tbody>${body.map((r) => "<tr>" + r.map((c) => "<td>" + inl(c) + "</td>").join("") + "</tr>").join("")}</tbody></table></div>`; continue;
     }
+    if (/^[*_\s]*By\s.+\bLast updated\b/i.test(l)) { flush(); i++; continue; } // extra byline line from older MD files: the real author and date are shown by the page itself
     p.push(l.trim()); i++;
   }
   flush(); return { html: o, toc, first };
@@ -106,8 +110,8 @@ const arts = fs.readdirSync(dir).filter((f) => f.endsWith(".md") && !f.startsWit
   if (!meta.description) warn.push(`${f}: "description:" is missing. Google shows it under your title.`);
   else if (meta.description.length > 160) warn.push(`${f}: description is ${meta.description.length} characters. Keep it under 155 so Google does not cut it.`);
   else if (meta.description.length < 70) warn.push(`${f}: description is short (${meta.description.length} characters). Aim for 120 to 155.`);
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(meta.date || "")) warn.push(`${f}: date must look like 2026-11-17 (year-month-day, with zeros).`);
-  else if (meta.date > new Date().toISOString().slice(0, 10)) warn.push(`${f}: date ${meta.date} is in the future. It is still published now. Check the date.`);
+  if (!/^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}(:\d{2})?(\.\d+)?(Z|[+-]\d{2}:?\d{2})?)?$/.test(meta.date || "")) warn.push(`${f}: date must look like 2026-11-17 (year-month-day, with zeros).`);
+  else if (meta.date.slice(0, 10) > new Date().toISOString().slice(0, 10)) warn.push(`${f}: date ${meta.date} is in the future. It is still published now. Check the date.`);
   const body = md(m ? m[2] : raw, f, meta.title);
   // AUTO PICTURES: put pictures in static/images/ named like the article file: <name>.jpg = top picture, <name>-2.jpg / -3.jpg / -4.jpg = placed inside the article.
   let imgNames = []; try { imgNames = fs.readdirSync(path.join(STATIC, "images")); } catch (e) {}
@@ -119,8 +123,8 @@ const arts = fs.readdirSync(dir).filter((f) => f.endsWith(".md") && !f.startsWit
   if (image && !imageAlt) warn.push(`${f}: "imageAlt:" is missing. Describe the main picture in one short line.`);
   const words = body.html.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
   if (words < 300) warn.push(`${f}: only about ${words} words. Match previews usually need 500 or more to be useful.`);
-  return { slug: s, title: meta.title || s, desc: meta.description || "", date: meta.date || "2026-01-01", cat: meta.category || "Articles", image, imageAlt: imageAlt || meta.title || "", author: meta.author || NAME, html: placeImgs(body.html, extraImgs, meta), toc: body.toc, min: Math.max(1, Math.round(words / 200)) };
-}).filter(Boolean).sort((a, b) => b.date.localeCompare(a.date));
+  return { slug: s, title: meta.title || s, desc: meta.description || "", date: (meta.date || "2026-01-01").slice(0, 10), dt: meta.date || "2026-01-01", cat: meta.category || "Articles", image, imageAlt: imageAlt || meta.title || "", author: meta.author || NAME, html: placeImgs(body.html, extraImgs, meta), toc: body.toc, min: Math.max(1, Math.round(words / 200)) };
+}).filter(Boolean).sort((a, b) => b.date.localeCompare(a.date) || b.dt.localeCompare(a.dt));
 
 { const seen = {}; arts.forEach((a) => { if (seen[a.slug]) warn.push(`Two articles use the same web address "${a.slug}". One will overwrite the other.`); seen[a.slug] = 1; }); }
 const catMap = {}; arts.forEach((a) => { const k = slug(a.cat) || "articles"; (catMap[k] = catMap[k] || { name: a.cat, slug: k, list: [] }).list.push(a); });
@@ -129,10 +133,10 @@ const cats = Object.values(catMap).sort((a, b) => b.list.length - a.list.length)
 // ---------- covers: every article gets a picture card automatically ----------
 // If an article has its own image (image: in the top block) that is used. Otherwise a branded card is drawn at build time (a small SVG file).
 const THEMES = [
-  { bg: "#0b241c", bg2: "#14402f", acc: "#f2b01e", panel: "#16704a" },
-  { bg: "#0f1f33", bg2: "#183a5e", acc: "#5bc0ff", panel: "#1d6fa5" },
-  { bg: "#241a2e", bg2: "#3d2a55", acc: "#ff9f5a", panel: "#b9502a" },
-  { bg: "#14201f", bg2: "#21403c", acc: "#f2d64b", panel: "#b8921f" },
+  { bg: "#021f15", bg2: "#05563a", acc: "#3ce3a2", panel: "#0a6b48" },
+  { bg: "#02281b", bg2: "#06402d", acc: "#d9f99d", panel: "#0b7a52" },
+  { bg: "#032a1c", bg2: "#07a468", acc: "#ffffff", panel: "#06402d" },
+  { bg: "#021f15", bg2: "#0a6b48", acc: "#10c37e", panel: "#05563a" },
 ];
 const hash = (s) => [...s].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
 const wrapWords = (t, max) => { const out = []; let line = ""; for (const w of t.split(/\s+/)) { const n = (line + " " + w).trim(); if (n.length <= max) line = n; else { if (line) out.push(line); line = w; } } if (line) out.push(line); return out; };
@@ -169,7 +173,7 @@ const ANALYTICS = '<script>window.va=window.va||function(){(window.vaq=window.va
 function page(o) { return page0(o).replace("</head>", '<link rel="stylesheet" href="/slider.css">' + ANALYTICS + "</head>"); }
 function page0(o) {
   const t = esc(o.title), im = o.image ? (isUrl(o.image) ? o.image : SITE + o.image) : SITE + "/og-default.jpg", ogIm = /\.svg$/.test(im) ? SITE + "/og-default.jpg" : im;
-  return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${t}</title><meta name="description" content="${esc(o.desc)}">${VERIFY ? `<meta name="google-site-verification" content="${esc(VERIFY)}">` : ""}<link rel="canonical" href="${SITE}${o.url}"><meta property="og:type" content="${o.type || "website"}"><meta property="og:site_name" content="${NAME}"><meta property="og:title" content="${t}"><meta property="og:description" content="${esc(o.desc)}"><meta property="og:url" content="${SITE}${o.url}"><meta property="og:image" content="${esc(ogIm)}"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"><link rel="stylesheet" href="/style.css">${o.ld ? '<script type="application/ld+json">' + JSON.stringify(o.ld) + "</script>" : ""}</head><body>${head()}<main>${o.body}</main>${foot()}</body></html>`;
+  return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#021f15"><title>${t}</title><meta name="description" content="${esc(o.desc)}">${VERIFY ? `<meta name="google-site-verification" content="${esc(VERIFY)}">` : ""}<link rel="canonical" href="${SITE}${o.url}"><meta property="og:type" content="${o.type || "website"}"><meta property="og:site_name" content="${NAME}"><meta property="og:title" content="${t}"><meta property="og:description" content="${esc(o.desc)}"><meta property="og:url" content="${SITE}${o.url}"><meta property="og:image" content="${esc(ogIm)}"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="/style.css">${o.ld ? '<script type="application/ld+json">' + JSON.stringify(o.ld) + "</script>" : ""}</head><body>${head()}<main>${o.body}</main>${foot()}</body></html>`;
 }
 function write(p, html) { const f = path.join(OUT, p, "index.html"); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, html); }
 
@@ -218,11 +222,14 @@ function sliderHtml() {
   return `<section class="pn-slider" aria-roledescription="carousel" aria-label="Top stories"><div class="pn-stage">${S.map((x, i) => `<a class="pn-slide${i === 0 ? " on" : ""}" href="${esc(x.href)}"${ext(x.href)} aria-label="${esc(x.title)}"><span class="pn-img"><img src="${esc(x.img)}" alt="${esc(x.alt || x.title)}" width="1600" height="900"${i === 0 ? ' fetchpriority="high"' : ' loading="lazy"'}></span><span class="pn-cap">${x.tag ? `<small>${esc(x.tag)}</small>` : ""}<b>${esc(x.title)}</b>${x.text ? `<em>${esc(x.text)}</em>` : ""}<i>${esc(x.btn)} &rarr;</i></span></a>`).join("")}</div>${S.length > 1 ? `<button class="pn-nav pn-prev" type="button" aria-label="Previous slide">&#8249;</button><button class="pn-nav pn-next" type="button" aria-label="Next slide">&#8250;</button><div class="pn-dots">${S.map((_, i) => `<button type="button" aria-label="Slide ${i + 1}"${i === 0 ? ' class="on"' : ""}></button>`).join("")}</div>` : ""}</section><script>(function(){var r=document.querySelector(".pn-slider");if(!r)return;var s=[].slice.call(r.querySelectorAll(".pn-slide")),d=[].slice.call(r.querySelectorAll(".pn-dots button")),n=0,t;function go(i){n=(i+s.length)%s.length;s.forEach(function(e,k){e.classList.toggle("on",k===n)});d.forEach(function(e,k){e.classList.toggle("on",k===n)});s[n].querySelectorAll("img").forEach(function(m){m.loading="eager"})}function play(){stop();if(s.length>1&&!matchMedia("(prefers-reduced-motion: reduce)").matches)t=setInterval(function(){go(n+1)},5000)}function stop(){clearInterval(t)}var p=r.querySelector(".pn-prev"),x=r.querySelector(".pn-next");if(p)p.onclick=function(){go(n-1);play()};if(x)x.onclick=function(){go(n+1);play()};d.forEach(function(e,k){e.onclick=function(){go(k);play()}});r.addEventListener("mouseenter",stop);r.addEventListener("mouseleave",play);r.addEventListener("focusin",stop);r.addEventListener("focusout",play);var x0=null;r.addEventListener("touchstart",function(e){x0=e.touches[0].clientX},{passive:true});r.addEventListener("touchend",function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40){go(n+(dx<0?1:-1));play()}x0=null});play()})()</script>`;
 }
 
+const statsHtml = () => `<div class="w"><div class="stats">${STATS().map((x) => `<div class="stat"><b>${esc(x[0])}</b><span>${esc(x[1])}</span></div>`).join("")}</div></div>`;
+const tickerHtml = () => { const g = TICKER.concat(TICKER).map((t) => `<span>${esc(t)}</span><span class="tk-ball">&#9917;</span>`).join(""); return `<div class="ticker" aria-hidden="true"><div class="ticker-track"><div class="tk-g">${g}</div><div class="tk-g">${g}</div></div></div>`; };
+
 // Home
 const f0 = arts[0];
 write("", page({
   title: `${NAME} | MLS previews, team news and match analysis`, desc: "MLS match previews, predicted lineups, team news, injury updates and match analysis, written for fans. Updated through the season.", url: "/", image: f0 && f0.image,
-  body: pagehead("Pitchside Notes: MLS and football previews, guides and match news", "Match previews, predicted lineups, team news and international football guides, in plain English.") +
+  body: pagehead("Pitchside Notes: MLS and football previews, guides and match news", "Match previews, predicted lineups, team news and international football guides, in plain English.") + statsHtml() + tickerHtml() +
     `<div class="w"><div class="home-top">${sliderHtml()}<aside class="side">${liveBox()}</aside></div><section class="sec">${widget}</section>${arts.length ? `<section class="sec"><h2 class="sh">Latest articles</h2><div class="cards">${arts.map(card).join("")}</div></section>` : ""}</div>`,
   ld: { "@context": "https://schema.org", "@type": "WebSite", name: NAME, url: SITE + "/" }
 }));
@@ -235,7 +242,7 @@ for (const a of arts) {
   const toc = a.toc.length >= 3 ? `<nav class="toc" aria-label="In this article"><b>In this article</b><ol>${a.toc.map((x) => `<li><a href="#${x.id}">${esc(x.text)}</a></li>`).join("")}</ol></nav>` : "";
   const body = lay(`<article class="post panel">${kick(a)}<h1>${esc(a.title)}</h1>${meta2(a)}${a.image ? `<figure class="cover"><img src="${esc(a.image)}" alt="${esc(a.imageAlt)}" fetchpriority="high" width="1600" height="900"></figure>` : ""}${toc}<div class="body">${a.html}</div><aside class="cta"><b>Follow the match live</b><p>Open <a href="${KP}/mls-live-scores/" rel="noopener">MLS live scores today</a> on KickPulse, check the <a href="${KP}/mls-schedule/" rel="noopener">MLS schedule</a>, or see <a href="${KP}/mls-on-tv/" rel="noopener">how to watch MLS on TV</a>.</p></aside></article>${rel.length ? `<section class="sec"><h2 class="sh">Keep reading</h2><div class="cards">${rel.map(card).join("")}</div></section>` : ""}`, { ex: a.slug });
   write("articles/" + a.slug, page({ title: `${a.title} | ${NAME}`, desc: a.desc, url: `/articles/${a.slug}/`, image: a.image, type: "article", body,
-    ld: { "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.desc, datePublished: a.date, dateModified: a.date, ...(a.image ? { image: [SITE + a.image] } : {}), author: { "@type": "Organization", name: NAME }, mainEntityOfPage: SITE + "/articles/" + a.slug + "/", publisher: { "@type": "Organization", name: NAME } } }));
+    ld: { "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.desc, datePublished: a.dt, dateModified: a.dt, ...(a.image ? { image: [SITE + a.image] } : {}), author: { "@type": "Organization", name: NAME }, mainEntityOfPage: SITE + "/articles/" + a.slug + "/", publisher: { "@type": "Organization", name: NAME } } }));
 }
 // About, privacy
 const plain = (h, inner) => lay(`<article class="post panel"><h1>${h}</h1><div class="body">${inner}</div></article>`);
