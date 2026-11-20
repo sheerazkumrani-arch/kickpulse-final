@@ -15,25 +15,6 @@ og_image: /images/orlando-city-1-3-fc-cincinnati-hero-banner.jpg
 tags: [Orlando City, FC Cincinnati, Evander, MLS Cup Playoffs, Wild Card, Nashville SC]
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  "headline": "Orlando City 1-3 FC Cincinnati: Evander Steals Wild Card",
-  "description": "FC Cincinnati beat Orlando City 3-1 in the MLS Wild Card. Evander scored twice, Gidi sealed it, and Nashville SC await in Round One. Report and stats.",
-  "datePublished": "2026-11-20T09:00:00+05:00",
-  "dateModified": "2026-11-20T09:00:00+05:00",
-  "author": { "@type": "Person", "name": "Sheeraz Khan" },
-  "articleSection": "Match reports",
-  "image": [
-    "https://kickpulse-football.vercel.app/images/orlando-city-1-3-fc-cincinnati-hero-banner.jpg",
-    "https://kickpulse-football.vercel.app/images/orlando-city-1-3-fc-cincinnati-goals-timeline.jpg",
-    "https://kickpulse-football.vercel.app/images/orlando-city-1-3-fc-cincinnati-match-stats.jpg",
-    "https://kickpulse-football.vercel.app/images/orlando-city-1-3-fc-cincinnati-nashville-round-one-schedule.jpg"
-  ]
-}
-</script>
-
 # Orlando City 1-3 FC Cincinnati: Evander Steals Wild Card
 
 ![Orlando City 1-3 FC Cincinnati MLS Wild Card banner: Evander two goals and one assist, 21 shots to 9, Samuel Gidi 85th-minute goal](/images/orlando-city-1-3-fc-cincinnati-hero-banner.jpg)
