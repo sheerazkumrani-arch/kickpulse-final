@@ -1,36 +1,23 @@
-/* Home page slider (auto-sliding top stories), green theme.
-   --slider-width : make the slider bigger or smaller.
-   --pn-time      : the progress bar on the active dot. Keep it equal to the auto-slide time in build.js (3s = 3000 ms). */
-.pn-slider{--slider-width:760px;--pn-time:3s;--pn-acc:#10c37e;--pn-dark:#021f15;position:relative;max-width:var(--slider-width);margin:18px auto 26px;border-radius:20px;overflow:hidden;background:var(--pn-dark);border:1px solid rgba(255,255,255,.14);box-shadow:0 14px 34px rgba(0,0,0,.35)}
-.pn-stage{display:grid}
-.pn-slide{grid-area:1/1;position:relative;display:block;color:#fff;text-decoration:none;opacity:0;visibility:hidden;transition:opacity .55s ease,visibility .55s}
-.pn-slide.on{opacity:1;visibility:visible}
-.pn-img{display:block;aspect-ratio:16/9;background:var(--pn-dark);overflow:hidden}
-.pn-img img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1)}
-.pn-slide.on .pn-img img{animation:pn-zoom 7s ease-out forwards}
-@keyframes pn-zoom{from{transform:scale(1)}to{transform:scale(1.07)}}
-
-/* caption sits on the photo, like a real news site */
-.pn-cap{position:absolute;left:0;right:0;bottom:0;display:flex;flex-wrap:wrap;align-items:flex-end;gap:6px 16px;padding:70px 22px 36px;background:linear-gradient(to top,rgba(2,31,21,.97) 0%,rgba(2,31,21,.82) 42%,rgba(2,31,21,0) 100%)}
-.pn-cap small{flex:0 0 100%;align-self:flex-start;width:max-content;max-width:100%;background:var(--pn-acc);color:#02231a;font:700 11.5px/1 "Poppins",system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
-.pn-cap b{flex:1 1 60%;font:400 clamp(26px,3.4vw,38px)/1.06 "Bebas Neue","Arial Narrow",Impact,sans-serif;letter-spacing:.02em;text-transform:uppercase;text-shadow:0 2px 10px rgba(0,0,0,.45)}
-.pn-cap em{display:none}
-.pn-cap i{font-style:normal;display:inline-flex;align-items:center;gap:8px;background:var(--pn-acc);color:#02231a;font:400 17px/1 "Bebas Neue","Arial Narrow",Impact,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:8px 8px 8px 16px;border-radius:999px;white-space:nowrap}
-.pn-cap i::after{content:"\2197";display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--pn-dark);color:#fff;font:700 13px/1 system-ui,sans-serif}
+/* Pitchside Notes: home page slider, white theme (green and white). Works with the markup made by build.js. */
+.pn-slider{--slider-width:100%;position:relative;width:var(--slider-width);max-width:100%;margin:0 auto;border-radius:20px;overflow:hidden;background:#021f15;border:1px solid #dbe8e1;box-shadow:0 1px 2px rgba(6,40,28,.06)}
+.pn-stage{position:relative;aspect-ratio:16/9;background:#021f15}
+.pn-slide{position:absolute;inset:0;display:block;opacity:0;visibility:hidden;transition:opacity .5s ease,visibility .5s;color:#fff;text-decoration:none}
+.pn-slide.on{opacity:1;visibility:visible;z-index:1}
+.pn-img,.pn-img img{display:block;width:100%;height:100%}
+.pn-img img{object-fit:cover}
+.pn-cap{position:absolute;left:0;right:0;bottom:0;display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:56px 70px 22px 24px;background:linear-gradient(0deg,rgba(2,31,21,.96) 0%,rgba(2,31,21,.78) 55%,rgba(2,31,21,0) 100%)}
+.pn-cap small{font:600 12px/1 "Poppins",system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#10c37e;background:rgba(16,195,126,.16);border:1px solid rgba(16,195,126,.5);border-radius:999px;padding:6px 12px}
+.pn-cap b{font:400 clamp(28px,3.4vw,44px)/1.04 "Bebas Neue","Arial Narrow",Impact,sans-serif;letter-spacing:.015em;text-transform:uppercase;color:#fff;max-width:760px}
+.pn-cap em{font:400 15px/1.5 "Poppins",system-ui,sans-serif;font-style:normal;color:#cfe9dc;max-width:640px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pn-cap i{margin-top:4px;font:400 18px/1 "Bebas Neue","Arial Narrow",Impact,sans-serif;font-style:normal;letter-spacing:.05em;text-transform:uppercase;background:#10c37e;color:#02231a;border-radius:999px;padding:9px 18px}
 .pn-slide:hover .pn-cap i{background:#fff}
-
-/* arrows */
-.pn-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:rgba(2,31,21,.55);backdrop-filter:blur(4px);color:#fff;font-size:28px;line-height:1;cursor:pointer;display:grid;place-items:center;transition:background .15s,color .15s}
-.pn-nav:hover{background:var(--pn-acc);color:#02231a;border-color:var(--pn-acc)}
-.pn-prev{left:12px}.pn-next{right:12px}
-
-/* dots with a filling progress bar on the active one */
-.pn-dots{position:absolute;left:0;right:0;bottom:12px;display:flex;justify-content:center;gap:8px}
-.pn-dots button{position:relative;overflow:hidden;width:9px;height:9px;border-radius:5px;border:0;padding:0;background:rgba(255,255,255,.4);cursor:pointer;transition:width .25s}
-.pn-dots button.on{width:34px;background:rgba(255,255,255,.3)}
-.pn-dots button.on::after{content:"";position:absolute;inset:0;background:var(--pn-acc);transform-origin:left;animation:pn-fill var(--pn-time) linear forwards}
-@keyframes pn-fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-
-@media(max-width:860px){.pn-slider{margin-left:0;margin-right:0;border-radius:16px}}
-@media(max-width:560px){.pn-cap{padding:56px 14px 32px}.pn-cap b{font-size:24px;flex-basis:100%}.pn-cap i{font-size:15px}.pn-nav{width:36px;height:36px;font-size:22px}.pn-dots{bottom:10px}}
-@media(prefers-reduced-motion:reduce){.pn-slide.on .pn-img img,.pn-dots button.on::after{animation:none}.pn-dots button.on::after{transform:none}}
+.pn-nav{position:absolute;top:calc(50% - 22px);z-index:3;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#06281c;font:400 30px/1 Arial,sans-serif;display:grid;place-items:center;cursor:pointer;padding:0 0 3px;box-shadow:0 2px 8px rgba(0,0,0,.25);transition:background .15s}
+.pn-nav:hover{background:#10c37e}
+.pn-prev{left:14px}.pn-next{right:14px}
+.pn-nav:focus-visible,.pn-dots button:focus-visible{outline:3px solid #10c37e;outline-offset:2px}
+.pn-dots{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;padding:12px 16px;background:#021f15}
+.pn-dots button{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:width .2s,background .2s}
+.pn-dots button:hover{background:rgba(255,255,255,.7)}
+.pn-dots button.on{background:#10c37e;width:24px;border-radius:999px}
+@media(max-width:640px){.pn-stage{aspect-ratio:4/3}.pn-cap{padding:46px 16px 16px;gap:5px}.pn-cap em{display:none}.pn-cap i{font-size:16px;padding:8px 15px}.pn-nav{width:36px;height:36px;font-size:24px;top:calc(50% - 18px)}.pn-prev{left:8px}.pn-next{right:8px}}
+@media(prefers-reduced-motion:reduce){.pn-slide{transition:none}}
