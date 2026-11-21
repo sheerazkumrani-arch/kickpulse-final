@@ -4,6 +4,7 @@ description: "Le Portugal peut-il gagner sans Ronaldo ? Pays-Bas vs Portugal en
 date: 2026-11-21T21:00:00+05:00
 category: Articles
 lang: fr
+translation: portugal-vs-netherlands-nations-league-quarter-final-2027
 author: Sheeraz Khan
 image: /images/por-ned-nations-league-qf-2027-hero-banner-fr.jpg
 imageAlt: "Le Portugal peut-il gagner sans Ronaldo ? Bannière du quart de finale de la Ligue des nations 2027 Pays-Bas vs Portugal avec quatre statistiques : 146 buts internationaux pour Ronaldo, dix buts encaissés chacun en six matchs de phase de ligue, 14 contre 13 buts marqués, et deux manches les 27 et 30 mars"
