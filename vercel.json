@@ -2,7 +2,25 @@
   "buildCommand": "node build.js",
   "outputDirectory": "dist",
   "redirects": [
-    { "source": "/articles/:old(Orlando[^/]+)", "destination": "/articles/orlando-city-vs-fc-cincinnati-prediction-preview-team-news-lineups/", "permanent": true },
-    { "source": "/articles/:old(Orlando[^/]+)/", "destination": "/articles/orlando-city-vs-fc-cincinnati-prediction-preview-team-news-lineups/", "permanent": true }
+    {
+      "source": "/articles/:old(Orlando[^/]+)",
+      "destination": "/articles/orlando-city-vs-fc-cincinnati-preview/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/:old(Orlando[^/]+)/",
+      "destination": "/articles/orlando-city-vs-fc-cincinnati-preview/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/orlando-city-vs-fc-cincinnati-prediction-preview-team-news-lineups{/}?",
+      "destination": "/articles/orlando-city-vs-fc-cincinnati-preview/",
+      "permanent": true
+    },
+    {
+      "source": "/category/mls-match-preview{/}?",
+      "destination": "/category/match-previews/",
+      "permanent": true
+    }
   ]
 }

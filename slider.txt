@@ -2,10 +2,10 @@
 # To change the ORDER, move lines up or down. To REMOVE a slide, delete the line or put # in front of it.
 # When you write a NEW article: either add a line "article:file-name" where you want it, or do nothing, because the last line (latest:5) adds new articles by itself.
 #
-article:Orlando City vs. FC Cincinnati: Wild Card Kickoff Time, How to Watch and Preview
+article:orlando-city-vs-fc-cincinnati-wild-card-preview
 article:orlando-city-vs-fc-cincinnati-preview
 article:seattle-sounders-vs-real-salt-lake-prediction
-article:Can Mauricio Pochettino Save Manchester United Despite His Trophyless Record?
+article:pochettino-manchester-united-trophyless-record
 article:argentina-vs-costa-rica-7-0
 article:mls-matches-today-games-tonight-guide
 article:mls-scores-today-live-results-guide

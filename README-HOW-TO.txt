@@ -39,3 +39,26 @@ WRITING RULES
 - Keywords: 1 main phrase per article, in natural sentences:
   "[Team A] vs [Team B] preview", "[Club] predicted lineup", "[Club] injury news", "[Club] team news".
   Left out on purpose: "over 2.5 goals", "correct score", "home team win" (betting terms, AdSense risk).
+
+
+==================================================================
+NEW (November 2026): TIME, AUTHOR, LANGUAGES, FAQ
+==================================================================
+TOP BLOCK OF AN ARTICLE (between the two --- lines)
+  date: 2026-11-22          (year-month-day)
+  time: 18:30               (24-hour Pakistan time. Optional, but needed to sort same-day articles correctly)
+  updated: 2026-11-23T09:15 (optional. Shown as "Updated ..." only when it is later than date/time)
+  lang: en                  (en = English, fr = French -> /fr/, ur = Urdu -> /ur/, right-to-left)
+  translation: other-file-name  (the file name of the same article in another language, without .md.
+                                 Several are allowed: translation: my-article-fr, my-article-ur)
+The author shown on every article is set once in build.js (AUTHOR = "Sheeraz Khan").
+Older names still work: meta_description, featured_image, og_image, image_alt, lastmod.
+
+FAQ
+Write a heading "## FAQ" (or "## Questions fréquentes" / "## اکثر پوچھے گئے سوالات"), then each question as
+"### Question?" with the answer below it. Google FAQ schema is made automatically.
+Do NOT paste <script> schema blocks into articles any more: the builder makes the schema itself.
+
+FRENCH BOX AND URDU SECTION
+The "FR" box in the menu and the French box in the sidebar show the 4 newest French articles automatically.
+The Urdu page /ur/ shows "coming soon" until you add a file with  lang: ur .
