@@ -2,7 +2,7 @@
 title: "Revs vs Union: MLS Playoff Preview, Kickoff Time & Key Players"
 slug: "new-england-revolution-vs-philadelphia-union-playoff-preview"
 description: "New England Revolution host Philadelphia Union in Game 1 of the MLS playoffs. Kickoff time, head-to-head, key players, team news and MLS scores today."
-date: "2026-11-22"
+date: "2026-11-21"
 author: "Sheeraz Khan"
 category: "MLS"
 tags: ["MLS games today", "MLS scores today", "New England Revolution", "Philadelphia Union", "MLS Cup Playoffs", "match preview"]
