@@ -1,0 +1,284 @@
+{
+  "en": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "NewsArticle",
+        "headline": "Liverpool 4-0 Man United: Pochettino's Debut Ends in a Rout",
+        "description": "Liverpool 4-0 Man United at Anfield. Yoro's 8th-minute red card, goals from Szoboszlai, Wirtz, Ngumoha and Muñoz, player ratings, stats and table.",
+        "inLanguage": "en",
+        "datePublished": "2026-11-22T23:55:00+05:00",
+        "dateModified": "2026-11-22T23:55:00+05:00",
+        "author": {
+          "@type": "Person",
+          "name": "Sheeraz Khan"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pitchside Notes"
+        },
+        "image": [
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-scoreline-card.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-match-timeline.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-tactical-formation-board.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-player-ratings.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-stats-comparison.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-league-table-snapshot.jpg"
+        ],
+        "mainEntityOfPage": "https://kickpulse-final.vercel.app/articles/liverpool-4-0-man-united-pochettino-debut/",
+        "about": [
+          {
+            "@type": "SportsEvent",
+            "name": "Liverpool vs Manchester United",
+            "startDate": "2026-11-22T16:30:00+00:00",
+            "location": {
+              "@type": "Place",
+              "name": "Anfield"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What was the score in Liverpool vs Man United?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Liverpool won 4-0 at Anfield on 22 November 2026. It was 2-0 at half-time. Szoboszlai, Wirtz, Ngumoha and Muñoz scored."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why was Leny Yoro sent off?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yoro fouled Alexander Isak, who was through on goal, in the 8th minute. Referee Sam Barrott judged him the last man and showed a straight red card."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How did Pochettino's first match as Man United manager go?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Badly. United were a man down after 8 minutes and 2-0 down after 13. They lost 4-0, and remain in the bottom three on 8 points."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who was man of the match?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This Is Anfield chose Florian Wirtz, who scored and assisted. The Daily Express gave both Wirtz and Rio Ngumoha 9 out of 10."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What time did Liverpool vs Man United kick off?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It kicked off at 4:30pm UK time, which was 9:30pm in Pakistan and 11:30am US Eastern."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where are Liverpool and Man United in the table now?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Liverpool are 4th on 21 points. United are 19th on 8 points after this game, according to the Evening Standard."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "fr": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "NewsArticle",
+        "headline": "Liverpool 4-0 Manchester United : Pochettino humilié",
+        "description": "Liverpool écrase Manchester United 4-0 à Anfield. Rouge pour Yoro dès la 8e, buts de Szoboszlai, Wirtz, Ngumoha et Muñoz : résumé, notes, stats, classement.",
+        "inLanguage": "fr",
+        "datePublished": "2026-11-22T23:55:00+05:00",
+        "dateModified": "2026-11-22T23:55:00+05:00",
+        "author": {
+          "@type": "Person",
+          "name": "Sheeraz Khan"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pitchside Notes"
+        },
+        "image": [
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-scoreline-card.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-match-timeline.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-tactical-formation-board.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-player-ratings.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-stats-comparison.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-league-table-snapshot.jpg"
+        ],
+        "mainEntityOfPage": "https://kickpulse-final.vercel.app/articles/liverpool-4-0-man-united-pochettino-debut-fr/",
+        "about": [
+          {
+            "@type": "SportsEvent",
+            "name": "Liverpool vs Manchester United",
+            "startDate": "2026-11-22T16:30:00+00:00",
+            "location": {
+              "@type": "Place",
+              "name": "Anfield"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quel est le score de Liverpool-Manchester United ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Liverpool a gagné 4-0 à Anfield le 22 novembre 2026, après avoir mené 2-0 à la pause. Szoboszlai, Wirtz, Ngumoha et Muñoz ont marqué."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Pourquoi Leny Yoro a-t-il été expulsé ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "À la 8e minute, il a fauché Alexander Isak, parti seul vers le but. L'arbitre Sam Barrott l'a jugé dernier défenseur et lui a donné un carton rouge direct."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment s'est passé le premier match de Pochettino avec Manchester United ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Très mal : à dix dès la 8e minute, menés 2-0 à la 13e, battus 4-0. United reste dans la zone de relégation avec 8 points."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qui a été l'homme du match ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This Is Anfield a désigné Florian Wirtz, auteur d'un but et d'une passe décisive. Le Daily Express a donné 9/10 à Wirtz et à Rio Ngumoha."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "À quelle heure a eu lieu Liverpool-Manchester United ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le coup d'envoi a été donné à 17h30, heure de Paris (16h30 au Royaume-Uni)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quel est le classement de Liverpool et de United ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Liverpool est 4e avec 21 points. United est 19e avec 8 points, selon l'Evening Standard."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "ur": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "NewsArticle",
+        "headline": "لیورپول 4-0 مانچسٹر یونائیٹڈ: پوچیٹینو کا ڈیبیو ڈراؤنا خواب",
+        "description": "لیورپول نے اینفیلڈ میں مانچسٹر یونائیٹڈ کو 4-0 سے ہرا دیا۔ یورو کا 8ویں منٹ میں ریڈ کارڈ، گول، کھلاڑیوں کی ریٹنگ، اعداد و شمار اور پوائنٹس ٹیبل۔",
+        "inLanguage": "ur",
+        "datePublished": "2026-11-22T23:55:00+05:00",
+        "dateModified": "2026-11-22T23:55:00+05:00",
+        "author": {
+          "@type": "Person",
+          "name": "Sheeraz Khan"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pitchside Notes"
+        },
+        "image": [
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-scoreline-card.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-match-timeline.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-tactical-formation-board.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-player-ratings.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-stats-comparison.jpg",
+          "https://kickpulse-final.vercel.app/images/liverpool-4-0-man-united-pochettino-debut-league-table-snapshot.jpg"
+        ],
+        "mainEntityOfPage": "https://kickpulse-final.vercel.app/articles/liverpool-4-0-man-united-pochettino-debut-ur/",
+        "about": [
+          {
+            "@type": "SportsEvent",
+            "name": "Liverpool vs Manchester United",
+            "startDate": "2026-11-22T16:30:00+00:00",
+            "location": {
+              "@type": "Place",
+              "name": "Anfield"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "لیورپول اور مانچسٹر یونائیٹڈ کے میچ کا اسکور کیا رہا؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "لیورپول نے 22 نومبر 2026 کو اینفیلڈ میں 4-0 سے کامیابی حاصل کی۔ ہاف ٹائم پر اسکور 2-0 تھا۔ سوبوسلائی، ورٹز، نگوموہا اور مونیوز نے گول کیے۔"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "لینی یورو کو ریڈ کارڈ کیوں ملا؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "آٹھویں منٹ میں انہوں نے گول کی طرف جاتے الیگزینڈر اساک کو گرایا۔ ریفری سیم بیروٹ نے انہیں آخری دفاعی کھلاڑی مان کر سیدھا ریڈ کارڈ دیا۔"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "مانچسٹر یونائیٹڈ کے مینیجر کے طور پر پوچیٹینو کا پہلا میچ کیسا رہا؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "بہت برا۔ آٹھویں منٹ میں دس کھلاڑی رہ گئے، 13ویں منٹ تک 2-0 سے پیچھے، اور آخر میں 4-0 کی شکست۔ یونائیٹڈ 8 پوائنٹس کے ساتھ آخری تین میں ہے۔"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "مین آف دی میچ کون تھا؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "دِس اِز اینفیلڈ نے فلورین ورٹز کو چنا، جنہوں نے ایک گول اور ایک اسسٹ کیا۔ ڈیلی ایکسپریس نے ورٹز اور ریو نگوموہا دونوں کو 10 میں سے 9 دیے۔"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "پاکستان میں یہ میچ کس وقت شروع ہوا؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "میچ پاکستانی وقت کے مطابق رات 9:30 بجے شروع ہوا (برطانیہ میں شام 4:30)۔"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "پوائنٹس ٹیبل پر لیورپول اور یونائیٹڈ کہاں ہیں؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "لیورپول 21 پوائنٹس کے ساتھ چوتھے نمبر پر ہے۔ ایوننگ اسٹینڈرڈ کے مطابق یونائیٹڈ 8 پوائنٹس کے ساتھ 19ویں نمبر پر ہے۔"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
