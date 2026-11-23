@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Liverpool 4-0 Manchester United : Pochettino humilié"
 description: "Liverpool écrase Manchester United 4-0 à Anfield. Rouge pour Yoro dès la 8e, buts de Szoboszlai, Wirtz, Ngumoha, Muñoz : notes, stats, classement."
 date: 2026-11-22

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Pochettino peut-il sauver Manchester United ?"
 description: "Manchester United est 18e après son pire début depuis 1986. Pochettino, sans trophée en Angleterre, peut-il le sauver ? Calendrier, heures et verdict."
 date: 2026-11-21T21:00:00+05:00

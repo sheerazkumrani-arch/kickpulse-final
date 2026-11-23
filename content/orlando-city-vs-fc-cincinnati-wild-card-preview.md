@@ -1,5 +1,6 @@
 ---
 title: "Orlando City vs. FC Cincinnati: Wild Card Kickoff Time, How to Watch and Preview"
+category: Match previews
 description: "Orlando City host FC Cincinnati in the MLS Wild Card on Nov. 19. Get kickoff times for the US, UK and Pakistan, how to watch and a quick preview."
 slug: "orlando-city-vs-fc-cincinnati-wild-card-kickoff-time-how-to-watch"
 image: "/images/orlando-city-vs-fc-cincinnati-wild-card-hero.jpg"

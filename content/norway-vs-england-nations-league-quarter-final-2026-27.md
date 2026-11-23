@@ -1,5 +1,6 @@
 ---
 title: "Norway vs England Nations League 2027: Can Haaland Stun England?"
+category: Match previews
 slug: norway-vs-england-nations-league-quarter-final-2026-27
 date: 2026-11-20T18:00:00+05:00
 updated: 2026-11-20T18:00:00+05:00

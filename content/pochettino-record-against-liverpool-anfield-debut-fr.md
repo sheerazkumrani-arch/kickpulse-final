@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Bilan de Pochettino contre Liverpool : ses débuts à Anfield"
 description: "Le bilan de Pochettino contre Liverpool : 3 victoires en 19 matchs. Forme, blessés, duels clés, face-à-face et horaires avant ses débuts avec Man United."
 date: 2026-11-22

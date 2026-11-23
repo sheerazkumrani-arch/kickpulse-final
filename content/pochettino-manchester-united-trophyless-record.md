@@ -1,5 +1,6 @@
 ---
 title: "Pochettino at Man United: Can a Trophyless Manager Win?"
+category: Analysis
 slug: pochettino-manchester-united-trophyless-record
 meta_description: "Pochettino is Man United's new manager. 18th in the table, 1 win in 10. Read his trophyless record, first 5 fixtures and our verdict."
 focus_keyword: "Pochettino Manchester United"

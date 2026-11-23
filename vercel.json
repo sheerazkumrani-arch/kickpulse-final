@@ -21,6 +21,47 @@
       "source": "/category/mls-match-preview{/}?",
       "destination": "/category/match-previews/",
       "permanent": true
+    },
+    {
+      "source": "/articles/urdu-article{/}?",
+      "destination": "/articles/inter-miami-playoffs-messi-title-defence-ur/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/urdu-version-full{/}?",
+      "destination": "/articles/pochettino-record-against-liverpool-anfield-debut-ur/",
+      "permanent": true
+    },
+    {
+      "source": "/category/articles{/}?",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/liverpool-4-0-man-united-pochettino-debut-fr{/}?",
+      "destination": "/articles/liverpool-4-0-man-united-pochettino-debut/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/pochettino-manchester-united-sans-trophee{/}?",
+      "destination": "/articles/pochettino-manchester-united-trophyless-record/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/pochettino-record-against-liverpool-anfield-debut-fr{/}?",
+      "destination": "/articles/pochettino-record-against-liverpool-anfield-debut/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/portugal-vs-netherlands-nations-league-quarter-final-2027-fr{/}?",
+      "destination": "/articles/portugal-vs-netherlands-nations-league-quarter-final-2027/",
+      "permanent": true
+    },
+    {
+      "source": "/fr{/}?",
+      "destination": "/articles/",
+      "permanent": true
     }
-  ]
+  ],
+  "trailingSlash": true
 }

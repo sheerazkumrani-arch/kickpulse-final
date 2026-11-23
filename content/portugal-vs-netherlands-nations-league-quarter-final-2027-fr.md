@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Le Portugal peut-il gagner sans Ronaldo ? Pays-Bas vs Portugal, le choc de la Ligue des nations où tout se joue"
 description: "Le Portugal peut-il gagner sans Ronaldo ? Pays-Bas vs Portugal en Ligue des nations : dates, horaires, forme, finale de 2019 et stats."
 date: 2026-11-21T21:00:00+05:00

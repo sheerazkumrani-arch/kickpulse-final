@@ -1,5 +1,6 @@
 ---
 title: "Argentina Bounce Back After Uruguay Loss with 7-0 Rout of Costa Rica"
+category: Match reports
 slug: argentina-vs-costa-rica-7-0
 meta_description: "Argentina crushed Costa Rica 7-0 in Córdoba. Read the goals, scorers and player ratings from the seven-goal friendly win."
 focus_keyword: "Argentina vs Costa Rica 7-0"

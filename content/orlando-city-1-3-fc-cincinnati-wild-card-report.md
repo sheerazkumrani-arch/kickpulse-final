@@ -112,4 +112,4 @@ Yes. The Wild Card match was a single-elimination game, so Orlando City's season
 - [VAVEL USA: Orlando City vs Cincinnati live blog](https://www.vavel.com/en-us/soccer/2026/11/19/1279776-orlando-city-vs-cincinnati-live-latest-score-goals-and-mls-cup-playoffs-updates.html)
 - [Sports Illustrated: 2026 MLS Cup Playoffs bracket and schedule](https://www.si.com/soccer/2026-mls-cup-playoffs-bracket-schedule-key-matches-route-glory)
 
-**More from us:** read our [Orlando City vs FC Cincinnati preview](/articles/orlando-city-vs-fc-cincinnati-prediction-preview-team-news-lineups/), follow the [MLS playoffs matches today on KickPulse](https://kickpulse-football.vercel.app/mls-playoffs/), and browse [all articles](/articles/).
+**More from us:** read our [Orlando City vs FC Cincinnati preview](/articles/orlando-city-vs-fc-cincinnati-preview/), follow the [MLS playoffs matches today on KickPulse](https://kickpulse-football.vercel.app/mls-playoffs/), and browse [all articles](/articles/).

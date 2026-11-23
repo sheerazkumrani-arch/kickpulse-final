@@ -1,5 +1,6 @@
 ---
 title: "Nations League Quarter-Final Draw 2026/27: Who Faces Who?"
+category: Analysis
 slug: nations-league-quarter-final-draw-2026-27
 date: 2026-11-19T12:00:00+05:00
 updated: 2026-11-19T12:00:00+05:00

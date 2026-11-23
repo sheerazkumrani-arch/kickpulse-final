@@ -5,6 +5,7 @@ date: 2026-11-22
 time: "18:45"
 author: "Sheeraz Khan"
 lang: ur
+draft: true
 translation: pochettino-record-against-liverpool-anfield-debut
 category: Match previews
 tags: [Pochettino, Liverpool, Manchester United, Premier League]

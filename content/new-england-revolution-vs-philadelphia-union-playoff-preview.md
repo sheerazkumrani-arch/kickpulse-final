@@ -25,7 +25,7 @@ Searching for MLS games today? This is the one, and every game in this series is
 - **Venue:** Gillette Stadium, Foxborough, Massachusetts
 - **Watch:** Apple TV
 
-Follow the MLS scoreboard on our [MLS live scores page](/mls-live-scores/) or the official [MLS scores page](https://www.mlssoccer.com/scores/).
+Follow the MLS scoreboard on our [MLS live scores page](https://kickpulse-football.vercel.app/mls-live-scores/) or the official [MLS scores page](https://www.mlssoccer.com/scores/).
 
 ## How the Revs and Union Got Here: Season Form Compared
 
@@ -83,4 +83,4 @@ The Revolution, 2–1 both times.
 A penalty shootout decides the game.
 
 **Where can I follow MLS scores today?**
-On our [MLS live scores page](/mls-live-scores/) or the [official MLS scores page](https://www.mlssoccer.com/scores/).
+On our [MLS live scores page](https://kickpulse-football.vercel.app/mls-live-scores/) or the [official MLS scores page](https://www.mlssoccer.com/scores/).

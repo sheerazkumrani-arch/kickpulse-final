@@ -65,7 +65,7 @@ For deeper numbers, [FBref's MLS stats](https://fbref.com/en/comps/22/Major-Leag
 
 ## Win or Go Home: What's on the Line
 
-The winner moves into Round One of the 2026 MLS Cup Playoffs and keeps a title dream alive. The loser faces a long winter of questions. Every tackle, every set piece, every substitution now carries season-defining weight. For Seattle, it's a chance to turn a shaky finish into a run. For RSL, it's a chance to prove their late surge was no fluke. See what comes next in our [2026 MLS Cup Playoffs Bracket & Round One Schedule](/REPLACE-WITH-YOUR-PLAYOFF-SCHEDULE-URL).
+The winner moves into Round One of the 2026 MLS Cup Playoffs and keeps a title dream alive. The loser faces a long winter of questions. Every tackle, every set piece, every substitution now carries season-defining weight. For Seattle, it's a chance to turn a shaky finish into a run. For RSL, it's a chance to prove their late surge was no fluke. See what comes next in our [2026 MLS Cup Playoffs Bracket & Round One Schedule](/articles/mls-cup-playoffs-2026-schedule-format-round-one/).
 
 ## Quick Answers
 

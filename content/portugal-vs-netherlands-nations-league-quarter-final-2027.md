@@ -1,5 +1,6 @@
 ---
 title: "Can Portugal Win Without Ronaldo? Netherlands vs Portugal, the Nations League Tie With Everything on It"
+category: Match previews
 description: "Can Portugal win without Ronaldo? Netherlands vs Portugal Nations League quarter-final: dates, kick-off times, form, the 2019 final and key stats."
 date: 2026-11-21T21:00:00+05:00
 slug: portugal-vs-netherlands-nations-league-quarter-final-2027

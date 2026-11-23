@@ -20,7 +20,7 @@ og_image: "/images/revs-beat-union-2-0-hero-banner.jpg"
 
 One cruel bounce. One cool finish. One shutout. That is the MLS score today, and it came in front of 18,084 fans on a warm afternoon at Gillette. It was New England's first playoff game since 2023, and the Revs treated it like a final.
 
-Check every MLS result, MLS scoreboard and MLS live score on our [MLS live scores page](/mls-live-scores/).
+Check every MLS result, MLS scoreboard and MLS live score on our [MLS live scores page](https://kickpulse-football.vercel.app/mls-live-scores/).
 
 ## How the Own Goal Happened: A Cruel Bounce at 10'
 
@@ -128,4 +128,4 @@ Game 3 is played, scheduled for December 2.
 The winner of Columbus Crew vs Inter Miami.
 
 **Where can I find MLS scores today?**
-On our [MLS live scores page](/mls-live-scores/) or the official [MLS scores page](https://www.mlssoccer.com/scores/).
+On our [MLS live scores page](https://kickpulse-football.vercel.app/mls-live-scores/) or the official [MLS scores page](https://www.mlssoccer.com/scores/).

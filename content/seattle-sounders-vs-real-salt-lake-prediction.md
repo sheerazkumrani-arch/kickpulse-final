@@ -1,6 +1,6 @@
 ---
 title: "Seattle Sounders vs Real Salt Lake Prediction, Preview and Lineups (2026)"
-description: "Seattle Sounders vs Real Salt Lake in the 2026 MLS Cup Playoffs: prediction, recent form, team news, predicted lineups, kickoff time and where to follow MLS scores live."
+description: "Seattle Sounders vs Real Salt Lake, 2026 MLS Cup Playoffs: prediction, recent form, team news, predicted lineups and kickoff time."
 slug: "seattle-sounders-vs-real-salt-lake-prediction"
 date: "2026-11-16"
 category: "MLS Match Preview"

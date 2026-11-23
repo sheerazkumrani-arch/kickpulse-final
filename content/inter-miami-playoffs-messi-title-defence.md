@@ -1,5 +1,6 @@
 ---
 title: "Inter Miami Playoffs: Can Messi Save the Title Defence?"
+category: Analysis
 description: "Inter Miami playoffs on the brink after a 3-0 loss to Columbus. MLS results, Messi's record and realistic ways out before Game 2."
 date: 2026-11-22
 slug: inter-miami-playoffs-messi-title-defence

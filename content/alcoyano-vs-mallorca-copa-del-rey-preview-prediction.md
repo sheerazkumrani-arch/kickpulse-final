@@ -9,13 +9,13 @@ author: "KickPulse Editorial Team"
 category: "Copa del Rey"
 2026-11-18T23:00:00+05:00
 tags: ["Alcoyano vs Mallorca", "Alcoyano vs Mallorca prediction", "Copa del Rey 2026", "Copa del Rey first round", "Copa del Rey prediction", "Alcoyano", "Mallorca", "Estadio El Collao", "football preview"]
-image: "/images/alcoyano-vs-mallorca/copa-del-rey-alcoyano-vs-mallorca-hero-banner.jpg"
+image: "/images/copa-del-rey-alcoyano-vs-mallorca-hero-banner.jpg"
 image_alt: "Alcoyano vs Mallorca Copa del Rey 2026 first round banner with date, kick-off time and Estadio El Collao"
 ---
 
 # Alcoyano vs Mallorca Prediction, Kick-Off Time, TV & Team News – Copa del Rey 2026
 
-![Alcoyano vs Mallorca Copa del Rey 2026 first round banner with date, kick-off time and Estadio El Collao](/images/alcoyano-vs-mallorca/copa-del-rey-alcoyano-vs-mallorca-hero-banner.jpg)
+![Alcoyano vs Mallorca Copa del Rey 2026 first round banner with date, kick-off time and Estadio El Collao](/images/copa-del-rey-alcoyano-vs-mallorca-hero-banner.jpg)
 
 ## Quick Answer: Alcoyano vs Mallorca at a Glance
 
@@ -56,7 +56,7 @@ Clubs from higher divisions often rotate in early cup rounds, but Mallorca's lea
 
 ## Alcoyano vs Mallorca Form Guide and Head-to-Head Record
 
-![Alcoyano vs Mallorca form guide for the last five matches: Alcoyano 2 wins, 1 draw, 2 defeats; Mallorca 2 wins, 3 draws, 0 defeats](/images/alcoyano-vs-mallorca/alcoyano-vs-mallorca-form-guide.jpg)
+![Alcoyano vs Mallorca form guide for the last five matches: Alcoyano 2 wins, 1 draw, 2 defeats; Mallorca 2 wins, 3 draws, 0 defeats](/images/alcoyano-vs-mallorca-form-guide.jpg)
 
 | Team | Last five matches (all competitions) |
 |---|---|
@@ -77,7 +77,7 @@ Mallorca arrive unbeaten in their last five, while Alcoyano have been irregular 
 | USA – West Coast (PT) | 11:00 |
 | Pakistan (PKT) | 00:00 (19 November) |
 
-![Alcoyano vs Mallorca kick-off times by country: Spain 20:00, UK 19:00, US East 14:00, US West 11:00, Pakistan 00:00](/images/alcoyano-vs-mallorca/alcoyano-vs-mallorca-kick-off-times.jpg)
+![Alcoyano vs Mallorca kick-off times by country: Spain 20:00, UK 19:00, US East 14:00, US West 11:00, Pakistan 00:00](/images/alcoyano-vs-mallorca-kick-off-times.jpg)
 
 ## Where to Watch Alcoyano vs Mallorca Live on TV
 
@@ -87,7 +87,7 @@ Mallorca arrive unbeaten in their last five, while Alcoyano have been irregular 
 
 ## Alcoyano vs Mallorca Prediction
 
-![Alcoyano vs Mallorca prediction: Alcoyano 0, Mallorca 2, with three key factors](/images/alcoyano-vs-mallorca/alcoyano-vs-mallorca-prediction-score.jpg)
+![Alcoyano vs Mallorca prediction: Alcoyano 0, Mallorca 2, with three key factors](/images/alcoyano-vs-mallorca-prediction-score.jpg)
 
 **Our prediction: CD Alcoyano 0-2 RCD Mallorca.**
 

@@ -1,6 +1,6 @@
 ---
 title: Singapore 0-7 Brazil Highlights: Vinicius Jr Hat-Trick Fires Selecao to Easy Win
-description: Singapore 0-7 Brazil highlights and report: Vinicius Jr scores a hat-trick in 12 minutes as Ancelotti's side bounce back from the Japan defeat. Goals, timeline and reaction.
+description: Singapore 0-7 Brazil report: Vinicius Jr scores a hat-trick in 12 minutes as Ancelotti's side bounce back from the Japan defeat. Goals and timeline.
 date: 2026-11-17
 category: Match reports
 image: /images/singapore-0-7-brazil-highlights.jpg
