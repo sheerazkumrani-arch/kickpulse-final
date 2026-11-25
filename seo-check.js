@@ -36,6 +36,11 @@ module.exports = function check(OUT, SITE) {
       if (!/"datePublished"/.test(h)) errors.push(`${u}: article has no publish date (add "date:" to the top block).`);
       if (!/"author":\{"@type":"Person"/.test(h)) errors.push(`${u}: article has no author.`);
     }
+    // SEO UPDATE 2: extra checks in simple words
+    if (u !== "/" && t.length > 65) warn.push(`${u}: title is ${t.length} characters. Google shows about 60. Add a shorter  seo_title:  line.`);
+    for (const img of h.match(/<img\b[^>]*>/g) || []) if (!/\balt="[^"]+"/.test(img)) warn.push(`${u}: a picture has no alt text (a short description for blind readers and Google): ${(img.match(/src="([^"]+)"/) || [])[1]}`);
+    for (const m of h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) { try { JSON.parse(m[1]); } catch (e) { errors.push(`${u}: the schema code (JSON-LD) is broken, so Google cannot read it.`); } }
+    if (u.startsWith("/articles/") && u !== "/articles/") { const words = h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, "").replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length; if (words < 600) warn.push(`${u}: only about ${words} words. Short pages are often "Crawled - currently not indexed". Add your own analysis.`); }
     for (const img of h.match(/<img\b[^>]*>/g) || []) if (!/\bwidth=/.test(img)) warn.push(`${u}: a picture has no width/height: ${(img.match(/src="([^"]+)"/) || [])[1]}`);
     for (const m of h.matchAll(/href="(\/[^"#?]*)"/g)) {
       const l = m[1]; if (l.startsWith("/_vercel/")) continue;
@@ -45,6 +50,8 @@ module.exports = function check(OUT, SITE) {
   }
   for (const [t, l] of Object.entries(titles)) if (l.length > 1) warn.push(`Same <title> on ${l.length} pages: ${l.join(", ")}`);
   for (const [d, l] of Object.entries(descs)) if (d && l.length > 1) warn.push(`Same description on ${l.length} pages: ${l.join(", ")}`);
+  if (!files.has("/llms.txt")) warn.push("llms.txt was not created.");
+  if (!files.has("/404.html")) errors.push("404.html was not created, so wrong addresses show Vercel's plain error page.");
   for (const u of inSm) if (pages[u] === undefined) warn.push(`sitemap.xml lists ${u}, but that page does not exist.`);
   return { errors, warn, count: Object.keys(pages).length };
 };
