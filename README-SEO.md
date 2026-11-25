@@ -38,3 +38,20 @@ IndexNow is a free "doorbell": you tell Bing "these pages are new or changed", s
   - `node indexnow.js /articles/new-article-name/` → only the new article (do this after each new article).
 - An answer "200" or "202" means it worked. Do not send the full list every day; only new or changed pages.
 - No computer with Node.js? That is fine: Bing Webmaster Tools also reads your sitemap by itself, just a bit slower.
+
+
+## Update 2 (25 November 2026)
+| What | Where |
+|---|---|
+| llms.txt: a short plain-text list of your pages for AI tools (ChatGPT, Gemini, Perplexity). Made automatically at every build. | /llms.txt |
+| Match schema (SportsEvent, hidden code that tells Google "this page is about this match"). Added ONLY when an article has all three lines below. | page source |
+| SEO check now also warns about: titles over 65 characters, pictures with no alt text, broken schema code, articles under 600 words, missing llms.txt or 404 page. | end of the build log |
+
+Optional match lines for a preview's top block (write the real facts only):
+```
+home_team: Orlando City
+away_team: FC Cincinnati
+kickoff: 2026-11-19T05:30+05:00
+venue: Inter&Co Stadium
+```
+`kickoff:` is the start time with the Pakistan offset `+05:00` at the end.

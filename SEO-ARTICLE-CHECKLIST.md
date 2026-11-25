@@ -74,3 +74,11 @@ Box names: `takeaways`, `stats`, `analysis`, `players`, `timeline`, `next`. Text
 ## Publishing rhythm (quality over quantity)
 For the next 2-3 months: **3 to 4 strong articles per week** (at least 900-1,200 words with one original element), not several thin ones per day.
 Plus: update 1-2 older articles per week (result boxes, better FAQ, fixed facts). Updating is as valuable as publishing.
+
+
+## Before you publish a match preview (new)
+- [ ] Add `home_team:`, `away_team:` and `kickoff:` (for example `2026-11-19T05:30+05:00`). The build then adds match schema by itself.
+- [ ] Add `time:` (Pakistan time) when another article has the same date.
+- [ ] Keep `seo_title:` at 60 characters or fewer.
+- [ ] Add 2-3 real questions with `faq:`.
+- [ ] After the match: add the result at the top and an `updated:` date.
