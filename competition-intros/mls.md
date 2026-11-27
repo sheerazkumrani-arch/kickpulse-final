@@ -1,0 +1,3 @@
+Major League Soccer (MLS) is the top professional football league in the United States and Canada. Clubs play in two conferences, East and West, during the regular season. The best teams then enter the MLS Cup Playoffs, which end with the MLS Cup final.
+
+This page collects every MLS article on Pitchside Notes: match previews with predicted lineups and kickoff times, match reports after the final whistle, and simple guides to the playoff format. Many MLS games start late at night or early in the morning outside North America, so kickoff times are also given for readers in Pakistan, the UK and Europe. Articles are listed newest first.
