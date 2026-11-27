@@ -3,8 +3,8 @@ title: "Calendrier du Match 2 des playoffs MLS : horaires, scores des séries et
 description: "Calendrier du Match 2 des playoffs MLS des 27-28 nov. 2026 : les huit séries du premier tour, horaires ET, UK et Pakistan, scores et équipes menacées."
 slug: "calendrier-match-2-playoffs-mls-horaires"
 lang: "fr"                 # CONFIRM field name matches your other French articles
-date: "2026-11-27"
-updated: "2026-11-27"
+date: "2026-11-27T14:00:00+05:00"
+updated: "2026-11-27T14:00:00+05:00"
 author: "Sheeraz Khan"
 category: "Guides"
 tags: ["MLS", "MLS Cup Playoffs", "Inter Miami", "Nashville SC"]
@@ -15,9 +15,11 @@ canonical: "https://kickpulse-final.vercel.app/articles/calendrier-match-2-playo
 
 # Calendrier du Match 2 des playoffs MLS : horaires, scores des séries et équipes menacées
 
+*Par Sheeraz Khan · Publié le 27 novembre 2026, 14h00 PKT · Mis à jour le 27 novembre 2026, 14h00 PKT · 6 min de lecture*
+
 > **Réponse rapide :** Les huit Matchs 2 du premier tour des playoffs de la MLS se jouent le vendredi 27 et le samedi 28 novembre 2026 (heure des États-Unis). Le week-end commence avec Columbus Crew – Inter Miami à 20 h 00 ET vendredi, soit 1 h 00 au Royaume-Uni et 6 h 00 au Pakistan samedi. Les huit équipes qui mènent 1-0 peuvent conclure leur série ce week-end.
 
-*Dernière mise à jour : 27 novembre 2026, 11 h 00 PKT. Horaires vérifiés avec le flux KickPulse et les annonces officielles des clubs. Les horaires peuvent changer : vérifiez la page en direct le jour du match.*
+*Dernière mise à jour : 27 novembre 2026, 14 h 00 PKT. Horaires vérifiés avec le flux KickPulse et les annonces officielles des clubs. Les horaires peuvent changer : vérifiez la page en direct le jour du match.*
 
 ![Calendrier du Match 2 des playoffs MLS pour les huit séries](/images/mls-playoffs-game-2/mls-playoffs-game-2-schedule-fr.jpg)
 *Les huit Matchs 2, avec les horaires ET et Pakistan et le score de chaque série.*

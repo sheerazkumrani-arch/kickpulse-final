@@ -2,8 +2,8 @@
 title: "MLS Playoffs Game 2 Schedule: Kickoff Times, Series Scores and Who Can Go Out"
 description: "MLS playoffs Game 2 schedule for 27-28 Nov 2026: all eight Round One kickoff times in ET, UK and Pakistan time, series scores and who faces elimination."
 slug: "mls-playoffs-game-2-schedule-kickoff-times"
-date: "2026-11-27"          # CONFIRM before publishing
-updated: "2026-11-27"       # CONFIRM
+date: "2026-11-27T14:00:00+05:00"
+updated: "2026-11-27T14:00:00+05:00"
 author: "Sheeraz Khan"      # CONFIRM
 category: "Guides"          # CONFIRM it matches your existing categories
 tags: ["MLS", "MLS Cup Playoffs", "Inter Miami", "Nashville SC", "Schedule"]
@@ -15,9 +15,11 @@ canonical: "https://kickpulse-final.vercel.app/articles/mls-playoffs-game-2-sche
 
 # MLS Playoffs Game 2 Schedule: Kickoff Times, Series Scores and Who Can Go Out
 
+*By Sheeraz Khan · Published 27 November 2026, 14:00 PKT · Last updated 27 November 2026, 14:00 PKT · 6 min read*
+
 > **Quick answer:** All eight MLS Cup Playoffs Round One Game 2 matches are played on Friday 27 and Saturday 28 November 2026 (US time). The weekend opens with Columbus Crew vs Inter Miami at 8:00 PM ET on Friday, which is 1:00 AM UK time and 6:00 AM Pakistan time on Saturday. Every Game 1 produced a winner, so all eight leaders can finish their series this weekend.
 
-*Last updated: 27 November 2026, 11:00 AM PKT. Times checked against the KickPulse fixture feed and official club announcements. Kickoff times can change, so check the live page on match day.*
+*Last updated: 27 November 2026, 2:00 PM PKT. Times checked against the KickPulse fixture feed and official club announcements. Kickoff times can change, so check the live page on match day.*
 
 ![MLS playoffs Game 2 schedule for all eight Round One series](/images/mls-playoffs-game-2/mls-playoffs-game-2-schedule-en.jpg)
 *All eight Game 2 fixtures, with kickoff times in ET and Pakistan time and the series score.*
