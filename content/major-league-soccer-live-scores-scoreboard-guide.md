@@ -5,6 +5,8 @@ date: 2026-11-17
 category: Guides
 image: /images/major-league-soccer-live-scores.jpg
 imageAlt: Major League Soccer live scores graphic with live score and blog links
+seo_title: "MLS Live Scores: How to Read the Scoreboard"
+draft: true
 ---
 Major League Soccer is the top soccer league in the United States and Canada. If you are new to it, the scoreboard can look a little unfamiliar: two conferences, a long season and a playoff system that works differently from most European leagues. This guide explains how to read Major League Soccer live scores and the league table, step by step.
 

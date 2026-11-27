@@ -7,7 +7,11 @@ imageAlt: Singapore v Brazil friendly 2026 graphic with prediction, team news, t
 image2Alt: Confirmed line-ups for Singapore v Brazil, 17 November 2026
 image3Alt: Singapore vs Brazil kickoff time in Singapore, UK, Pakistan and Brazil
 image4Alt: Singapore vs Brazil ticket price guide for the National Stadium
+seo_title: "Singapore v Brazil: Prediction, Team News and Time"
 ---
+
+> **Final result:** Singapore 0-7 Brazil. This match has been played, so the ticket and kickoff details below are no longer current. [Read the full match report](/articles/singapore-0-7-brazil-highlights-vinicius-jr-hat-trick/).
+
 Brazil travel to the National Stadium in Kallang today for a friendly against Singapore, and the pressure is firmly on the visitors. Carlo Ancelotti's side lost 3-2 to Japan on Saturday, and anything less than a comfortable win will bring more criticism. For Singapore, it is a rare night against one of the biggest names in world football.
 
 This guide covers the Singapore v Brazil live score, kickoff time, team news, prediction and ticket price in one place.
@@ -52,7 +56,7 @@ If you searched for Singapore vs Brazil 2008, there is nothing to find. Accordin
 
 ## More live football on KickPulse
 
-While you wait for kickoff, fans of Major League Soccer can follow [MLS scores today](https://kickpulse-football.vercel.app/mls-live-scores/), check [MLS matches today](https://kickpulse-football.vercel.app/mls-live-scores/) or read how to understand [Major League Soccer live scores](https://kickpulse-final.vercel.app/articles/major-league-soccer-live-scores-scoreboard-guide/) and the MLS scoreboard. Our [MLS schedule](https://kickpulse-football.vercel.app/mls-schedule/) page lists the next games. For more previews and guides, visit [Pitchside Notes](https://kickpulse-final.vercel.app/).
+While you wait for kickoff, fans of Major League Soccer can follow [MLS scores today](https://kickpulse-football.vercel.app/mls-live-scores/), check [MLS matches today](https://kickpulse-football.vercel.app/mls-live-scores/) or read how to understand [Major League Soccer live scores](https://kickpulse-final.vercel.app/articles/mls-scores-today-live-results-guide/) and the MLS scoreboard. Our [MLS schedule](https://kickpulse-football.vercel.app/mls-schedule/) page lists the next games. For more previews and guides, visit [Pitchside Notes](https://kickpulse-final.vercel.app/).
 
 ## Sources and further reading
 

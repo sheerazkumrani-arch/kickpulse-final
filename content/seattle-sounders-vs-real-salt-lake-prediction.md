@@ -23,7 +23,11 @@ secondary_keywords:
   - mls games tonight
   - mls results today
   - major league soccer scores
+seo_title: "Seattle Sounders vs Real Salt Lake: Prediction & Lineups"
 ---
+
+> **Final result:** Real Salt Lake beat Seattle Sounders 4-2 on penalties after a 1-1 draw. [Read the full match report](/articles/real-salt-lake-beat-seattle-sounders-penalties-match-report/).
+
 
 # Seattle Sounders vs Real Salt Lake Prediction, Preview and Lineups (2026)
 

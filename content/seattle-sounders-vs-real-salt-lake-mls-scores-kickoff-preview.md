@@ -8,6 +8,7 @@ category: "MLS"
 tags: ["MLS scores", "MLS Cup Playoffs", "Seattle Sounders", "Real Salt Lake", "MLS games tonight"]
 featured_image: "/images/sea-rsl-wildcard-2026-hero-banner.jpg"
 og_image: "/images/sea-rsl-wildcard-2026-hero-banner.jpg"
+draft: true
 ---
 
 # Seattle Sounders vs Real Salt Lake: MLS Scores, Kickoff Time and a Win-or-Go-Home Showdown

@@ -8,7 +8,11 @@ category: "MLS"
 tags: ["MLS games today", "MLS scores today", "New England Revolution", "Philadelphia Union", "MLS Cup Playoffs", "match preview"]
 featured_image: "/images/revs-union-r1g1-hero-banner.jpg"
 og_image: "/images/revs-union-r1g1-hero-banner.jpg"
+seo_title: "Revolution vs Union: MLS Playoff Preview 2026"
 ---
+
+> **Final result:** Revolution beat Union 2-0 in Game 1. [Read the full match report](/articles/revolution-beat-union-2-0-game-1-match-report/).
+
 
 # New England Revolution vs Philadelphia Union: MLS Playoff Preview, Kickoff Time & Key Players
 

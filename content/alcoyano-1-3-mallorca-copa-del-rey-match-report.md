@@ -8,13 +8,13 @@ lastmod: "2026-11-19"
 author: "KickPulse Editorial Team"
 category: "Copa del Rey"
 tags: ["Alcoyano 1-3 Mallorca", "Copa del Rey 2026", "Adam Buksa", "Adrián Fuentes", "Abdón Prats", "Guille Andrés", "El Collao", "match report"]
-image: "/images/alcoyano-1-3-mallorca-hero-banner.jpg"
+image: "/images/copa-del-rey-alcoyano-vs-mallorca-hero-banner.jpg"
 image_alt: "Alcoyano 1-3 Mallorca Copa del Rey 2026 final score banner after extra time"
 ---
 
 # Alcoyano 1-3 Mallorca (AET): Copa del Rey Live on KickPulse
 
-![Alcoyano 1-3 Mallorca Copa del Rey 2026 final score banner after extra time](/images/alcoyano-1-3-mallorca-hero-banner.jpg)
+![Alcoyano 1-3 Mallorca Copa del Rey 2026 final score banner after extra time](/images/copa-del-rey-alcoyano-vs-mallorca-hero-banner.jpg)
 
 **Alcoyano 1-3 Mallorca** was everything the Copa del Rey promises: heart, drama and a ruthless finish. At a roaring **Estadio El Collao in Alcoy, Spain**, fourth-tier **CD Alcoyano** dragged Mallorca all the way to extra time before **Adam Buksa** struck in the **108th minute** and **Adrián Fuentes** sealed it with a clinical finish. Follow every cup night live on [KickPulse](https://kickpulse-football.vercel.app/).
 

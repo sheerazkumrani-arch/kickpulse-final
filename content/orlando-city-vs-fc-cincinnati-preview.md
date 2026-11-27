@@ -7,7 +7,11 @@ featured: yes
 image: /images/orlando-city-vs-fc-cincinnati.jpg
 imageAlt: Orlando City SC vs FC Cincinnati MLS Cup Playoffs Wild Card match preview
 author: Sheeraz Khan
+seo_title: "Orlando City vs FC Cincinnati: Preview and Team News"
 ---
+
+> **Final result:** Orlando City 1-3 FC Cincinnati. [Read the full match report](/articles/orlando-city-1-3-fc-cincinnati-wild-card-report/).
+
 
 One match, no second chances. **Orlando City SC** host **FC Cincinnati** in the Eastern Conference Wild Card of the 2026 MLS Cup Playoffs, and only one of them will be playing on the weekend. If you want the **MLS live score**, the latest **MLS results** or just a clear picture of the **MLS matchups** before kickoff, start here and then follow every goal on [MLS live scores on KickPulse](https://kickpulse-football.vercel.app/mls-live-scores/).
 
